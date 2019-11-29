@@ -1,0 +1,41 @@
+{
+  "clearInfo": {
+    "clearUrl": "api/clear.json"
+  },
+  "homeInfo": {
+    "title": "测试版的木马检测",
+    "icon": "fa fa-home",
+    "href": "form-step7.html"
+  },
+  "logoInfo": {
+    "title": "",
+    "image": "images/logo.png",
+    "href": ""
+  },
+  "menuInfo": {
+    "currency": {
+      "title": "基于门级网表的硬件木马智能诊断系统",
+      "icon": "fa fa-address-book",
+      "child": [
+        {
+          "title": "测试版的木马检测",
+          "href": "page/form-step5.html",
+          "icon": "fa fa-navicon",
+          "target": "_self"
+        },
+        {
+          "title": "应用版的木马检测",
+          "href": "page/upload.html",
+          "icon": "fa fa-window-maximize",
+          "target": "_self"
+        },
+        {
+          "title": "概念说明",
+          "href": "page/setting.html",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        }
+      ]
+    }
+  }
+}
