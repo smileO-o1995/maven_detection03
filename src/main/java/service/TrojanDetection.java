@@ -149,6 +149,7 @@ public class TrojanDetection {
             }else {
                 map.put("stat", true);
                 map.put("normal", false);
+                map.put("msg","检测正确，该有木马网表被检测为有木马网表");
                 //4、计算
                 //4.1计算成功检测到木马触发电路的正确率
                 String successRate = CaculateUtil.myPercent(successNum, originTrojan);

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>测试版的木马检测</title>
+    <title>应用版的木马检测</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -51,6 +51,7 @@
                                         <div id="myupload" class="demo"></div>
                                         <br>
                                         <div style="padding-bottom: 10px">
+                                            <button type="button" class="layui-btn layui-btn-primary reChoose">重新选择</button>
                                             <button class="layui-btn" lay-submit lay-filter="formStep1">
                                                 下一步
                                             </button>
@@ -122,7 +123,7 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <p class="noteStep3" style="display: none;"></p>
+                                    <p class="noteStep3" style="display: none;">pass</p>
                                     <div style="text-align: center;">
                                         <button type="button" class="layui-btn layui-btn-primary pre2">上一步</button>
                                         <button class="layui-btn step3CommitBtn">提交检测方式</button>
@@ -137,11 +138,12 @@
                                     <div style="text-align: center;margin-top: 90px;">
                                         <i class="layui-icon layui-circle"
                                            style="color: white;font-size:30px;font-weight:bold;background: #5FB878;padding: 20px;line-height: 80px;">&#xe635;</i>
+                                        <p class="noteStep4" style="display: none;">cannot</p>
                                     </div>
                                     <div style="text-align: center;margin-top: 50px;">
                                         <button type="button" class="layui-btn layui-btn-primary pre3">上一步</button>
                                         <button class="layui-btn step4CommitBtn">开始定位</button>
-                                        <button class="layui-btn refreshBtn">
+                                        <button class="layui-btn reComform">
                                             再试一次
                                         </button>
                                     </div>
@@ -157,79 +159,78 @@
                 <div class="layui-card">
                     <div class="layui-card-header"><i class="fa fa-line-chart icon">测试数据</i></div>
                     <div class="layui-card-body">
-                        <!--step1-->
-                        <p class="mytitle">测试网表：</p>
-                        <p class="mycontent netTitleJs"></p>
+                        <div class="layui-text">
+                            <table class="layui-table myTable">
+                                <colgroup>
+                                    <col width="150">
+                                    <col width="600">
+                                </colgroup>
+                                <tbody>
+                                <!--step1-->
+                                <tr>
+                                    <td>网表名称</td>
+                                    <td class="netTitleJs"></td>
+                                </tr>
 
-                        <!--step1_2-->
-                        <div class="mystep1_2_1" style="display: none">
-                            <hr>
-                            <p class="mytitle">网表为木马网表</p>
-                            <hr>
-                            <p class="mytitle">网表中的木马触发节点：</p>
-                            <p class="mycontent trojanNet"></p>
-                            <p class="mytitle">网表中的木马有效载荷点：</p>
-                            <p class="mycontent trojanPayLoad"></p>
-                        </div>
-                        <div class="mystep1_2_2" style="display: none">
-                            <hr>
-                            <p class="mytitle">网表为普通网表</p>
+                                <!--step1_2-->
+                                <tr class="trStep1_2" style="display: none;">
+                                    <td>网表类别</td>
+                                    <td class="netType"></td>
+                                </tr>
+                                <!--step1_2_1当有木马的时候需要执行下面这一个部分-->
+                                <tr class="trStep1_2_1" style="display:none;">
+                                    <td>触发节点</td>
+                                    <td><p class="tdStep1_2_1"></p></td>
+                                </tr>
+                                <tr class="trStep1_2_2" style="display: none;">
+                                    <td>有效载荷节点</td>
+                                    <td><p class="tdStep1_2_2"></p></td>
+                                </tr>
+
+                                <!--step2-->
+                                <tr class="trStep2" style="display: none;">
+                                    <td>特征值分布图</td>
+                                    <td><div id="echarts-feature" style="width:350px;height:350px;"></div></td>
+                                </tr>
+
+                                <!--step3-->
+                                <tr class="trStep3" style="display: none;">
+                                    <td>检测结果图</td>
+                                    <td><div id="echarts-detect" style="width:350px;height:350px;"></div></td>
+                                </tr>
+                                <tr class="trStep3_1" style="display: none;">
+                                    <td>判定结果</td>
+                                    <td class="tdStep3_1"></td>
+                                </tr>
+                                <!--下面为当网表为木马网表时才会显示-->
+                                <tr class="trStep3_2" style="display: none;">
+                                    <td>木马节点</td>
+                                    <td class="tdStep3_2"></td>
+                                </tr>
+                                <tr class="trStep3_3" style="display: none;">
+                                    <td>木马触发点识别率</td>
+                                    <td class="tdStep3_3"></td>
+                                </tr>
+                                <tr class="trStep3_4" style="display: none;">
+                                    <td>木马虚警率</td>
+                                    <td class="tdStep3_4"></td>
+                                </tr>
+
+                                <!--step4-->
+                                <tr class="trStep4" style="display: none;">
+                                    <td>木马定位</td>
+                                    <td class="tdStep4"></td>
+                                </tr>
+                            </table>
                         </div>
 
-                        <!--step2-->
-                        <div class="mystep2" style="display: none">
-                            <hr>
-                            <p class="mytitle">特征值分布图：</p>
-                            <div class="mychartStyle">
-                                <div id="echarts-feature" style="width:350px;height:350px;"></div>
-                            </div>
-                        </div>
-
-                        <!--step3-->
-                        <!--.myStep3对应的是，只要后台执行了检测动作就显示该部分-->
-                        <div id="mystep3_1" style="display: none">
-                            <hr>
-                            <p class="mytitle">木马检测结果图：</p>
-                            <div class="mychartStyle">
-                                <div id="echarts-detect" style="width:350px;height:350px;"></div>
-                            </div>
-                        </div>
-                        <!--当网表为无木马网表以及检测完全相反的时候显示该部分-->
-                        <div id="myStep3_2" style="display: none;">
-                            <hr>
-                            <p class="mytitle">检测结果分析：</p>
-                            <p class="mycontent errResult"></p>
-                        </div>
-                        <!--当将有木马网表检测为木马网表的时候显示该部分-->
-                        <div id="myStep3_3" style="display: none;">
-                            <hr>
-                            <p class="mytitle">检测为木马网表</p>
-                            <hr>
-                            <p class="mytitle">检测到的木马节点：</p>
-                            <p class="mycontent netSet"></p>
-                            <hr>
-                            <p class="mytitle">检测效率：</p>
-                            <p class="mycontent successRate">木马触发节点识别率：</p>
-                            <p class="mycontent errorRate">木马虚警率：</p>
-                        </div>
-
-                        <!--step4-->
-                        <div class="myStep4" style="display: none;">
-                            <hr>
-                            <p class="mycontent" id="numberTro"></p>
-                            <hr>
-                            <p class="mytitle">定位网表中的木马：</p>
-                            <div class="mycontent locationPre">
-                            </div>
-                        </div>
-
-                        <div id="mystep5" style="display: none;">
-                            <hr>
+                        <div id="myStep5" style="margin-top: 15px;display: none;left: 50%;">
                             <div class="mytitle">
                                 <button class="layui-btn layui-btn-primary refreshBtn">再试一次</button>
                                 <button class="layui-btn">保存数据</button>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -248,15 +249,15 @@
 <!-- 引用初始化JS -->
 <script type="text/javascript" src="js/myJs/demo.js"></script>
 <!--step1.js-->
-<script type="text/javascript" src="js/myJs/step1.js"></script>
+<script type="text/javascript" src="js/myJs/restep1.js"></script>
 <!--step1_2.js-->
-<script type="text/javascript" src="js/myJs/step1_2.js"></script>
+<script type="text/javascript" src="js/myJs/restep1_2.js"></script>
 <!--step2.js-->
-<script type="text/javascript" src="js/myJs/step2.js"></script>
+<script type="text/javascript" src="js/myJs/restep2.js"></script>
 <!--step3.js-->
-<script type="text/javascript" src="js/myJs/step3.js"></script>
+<script type="text/javascript" src="js/myJs/restep3.js"></script>
 <!--step4.js-->
-<script type="text/javascript" src="js/myJs/step4.js"></script>
+<script type="text/javascript" src="js/myJs/restep4.js"></script>
 
 <script type="text/javascript">
     layui.use([ 'form', 'step', 'layer'], function () {
@@ -306,6 +307,7 @@
         $(".refreshBtn").click(function () {
             location.reload();
         });
+
     });
 </script>
 </body>

@@ -75,9 +75,9 @@
 					html += '				<span id="fileDragArea" class="upload_drag_area">或者将文件拖到此处</span>';
 					html += '			</div>';
 		            html += '			<div class="status_bar">';
-		            html += '				<div id="status_info" class="info">选中0张文件，共0B。</div>';
+		            html += '				<div id="status_info" class="info">选中0张文件，共0B</div>';
 		            html += '				<div class="btns">';
-		            html += '					<div class="webuploader_pick">继续选择</div>';
+		            html += '					<div class="webuploader_pick" style="display: none;">继续选择</div>';
 		            html += '					<div class="upload_btn">开始上传</div>';
 		            html += '				</div>';
 		            html += '			</div>';
