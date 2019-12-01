@@ -159,7 +159,15 @@
                 <div class="layui-card">
                     <div class="layui-card-header"><i class="fa fa-line-chart icon">测试数据</i></div>
                     <div class="layui-card-body">
-                        <div class="layui-text">
+
+                        <div id="myStep5" style="display: none; align-content: left">
+                            <div>
+                                <button class="layui-btn layui-btn-primary refreshBtn">再试一次</button>
+                                <button class="layui-btn saveRst">保存数据</button>
+                            </div>
+                        </div>
+
+                        <div class="layui-text"  id="exportTable">
                             <table class="layui-table myTable">
                                 <colgroup>
                                     <col width="150">
@@ -224,13 +232,6 @@
                             </table>
                         </div>
 
-                        <div id="myStep5" style="margin-top: 15px;display: none;left: 50%;">
-                            <div class="mytitle">
-                                <button class="layui-btn layui-btn-primary refreshBtn">再试一次</button>
-                                <button class="layui-btn">保存数据</button>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -258,6 +259,10 @@
 <script type="text/javascript" src="js/myJs/restep3.js"></script>
 <!--step4.js-->
 <script type="text/javascript" src="js/myJs/restep4.js"></script>
+<!--导出pdf-->
+<script type="text/javascript" src="js/pdfjs/jsPdf.debug.js"></script>
+<script type="text/javascript" src="js/pdfjs/html2canvas.js"></script>
+<script type="text/javascript" src="js/myJs/pdfExport.js"></script>
 
 <script type="text/javascript">
     layui.use([ 'form', 'step', 'layer'], function () {

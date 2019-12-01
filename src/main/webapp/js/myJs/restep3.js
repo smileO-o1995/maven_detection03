@@ -203,11 +203,11 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
             });
         }else {
             if("error" == note){
-                layer.alert('抱歉，该网表检测出现反向判断错误。'+ '<br>'+'可下拉页面，选择"再试一次"或者"保存数据"', {
+                layer.alert('抱歉，该网表检测出现反向判断错误。'+ '<br>'+'可下拉页面，查看测试数据', {
                     skin: 'layui-layer-molv' //样式类名
                 });
             }else if("right" == note){
-                layer.alert('good，该网表检测正确，为无木马网表。'+ '<br>'+ '可下拉页面，选择"再试一次"或者"保存数据"', {
+                layer.alert('good，该网表检测正确，为无木马网表。'+ '<br>'+ '可下拉页面，查看测试数据', {
                     skin: 'layui-layer-molv' //样式类名
                 });
             }

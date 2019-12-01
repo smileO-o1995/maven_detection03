@@ -52,7 +52,7 @@ layui.use([ 'form', 'step', 'layer'], function () {
             //关闭等待提示框
             layer.close(index);
 
-            layer.alert('诊断已完成。'+ '<br>'+ '可下拉页面，选择"再试一次"或者"保存数据"', {
+            layer.alert('诊断已完成。'+ '<br>'+ '可下拉页面，查看测试数据', {
                 skin: 'layui-layer-molv' //样式类名
             });
             $("#myStep5").show();
@@ -74,5 +74,10 @@ layui.use([ 'form', 'step', 'layer'], function () {
         }else{
             location.reload();
         }
+    });
+
+    //3、点击“保存”按钮的时候，执行
+    $(".saveRst").click(function () {
+        exportPdf();
     });
 });
