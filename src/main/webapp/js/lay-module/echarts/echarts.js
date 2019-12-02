@@ -1,7 +1,8 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
         typeof define === 'function' && define.amd ? define(['exports'], factory) :
-            (factory((global.echarts = {})));
+            // window.layui && layui.define ? layui.define(function(exports){exports('echarts',factory(exports))}) :
+                (factory((global.echarts = {})));
 }(this, (function (exports) { 'use strict';
 
     /*
@@ -96233,5 +96234,6 @@
 layui.define('echartsTheme', function(exports) {
     echarts.registerTheme('walden', layui.echartsTheme);
     exports('echarts', echarts);
+    // return exports;
 });
 //# sourceMappingURL=echarts.js.map

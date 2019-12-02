@@ -33,9 +33,10 @@ layui.use([ 'form', 'step', 'layer'], function () {
             var payLoadLength = trojanPayLoad.length - 1;
             if(netLength >= 0){
                 $(".trStep1_2").show();//显示测试结果栏
-                $(".netType").append("被木马感染");
+                $(".netType").html("被木马感染");
                 $(".trStep1_2_1").show();
                 $(".trStep1_2_2").show();
+                $(".tdStep1_2_1").html("");
                 for(var key in trojanNetSet){
                     if(key != netLength ){
                         $(".tdStep1_2_1").append(trojanNetSet[key] + ",  ");
@@ -43,6 +44,7 @@ layui.use([ 'form', 'step', 'layer'], function () {
                         $(".tdStep1_2_1").append(trojanNetSet[key]);
                     }
                 }
+                $(".tdStep1_2_2").html("");
                 for(var key in trojanPayLoad){
                     if(key != payLoadLength ){
                         $(".tdStep1_2_2").append(trojanPayLoad[key] + ",  ");
@@ -52,7 +54,7 @@ layui.use([ 'form', 'step', 'layer'], function () {
                 }
             }else{//为无木马网表
                 $(".trStep1_2").show();//显示测试结果栏
-                $(".netType").append("无木马");
+                $(".netType").html("无木马");
             }
 
             //提示信息

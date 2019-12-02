@@ -137,7 +137,7 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
                 }
 
                 $(".trStep3_1").show();
-                $(".tdStep3_1").append(resData.msg);
+                $(".tdStep3_1").html(resData.msg);
                 console.info(resData.msg);
                 //判断是否定性检查正确
                 if(!resData.stat){//定性检查错误
@@ -152,6 +152,7 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
                         $(".trStep3_4").show();
                         var netSet = resData.netSet;
                         var len = netSet.length - 1;
+                        $(".tdStep3_2").html("");
                         for(var key in netSet){
                             if(key != len ){
                                 $(".tdStep3_2").append(netSet[key] + ",  ");
@@ -159,8 +160,8 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
                                 $(".tdStep3_2").append(netSet[key]);
                             }
                         }
-                        $(".tdStep3_3").append(resData.successRate);
-                        $(".tdStep3_4").append(resData.errorRate);
+                        $(".tdStep3_3").html(resData.successRate);
+                        $(".tdStep3_4").html(resData.errorRate);
                         $(".noteStep3").html("pass");
                     }
                 }
