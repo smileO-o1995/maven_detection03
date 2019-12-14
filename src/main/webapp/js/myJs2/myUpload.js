@@ -1,5 +1,6 @@
 layui.use(['upload', 'layer'], function(){
-    var upload = layui.upload,
+    var $ = layui.jquery,
+        upload = layui.upload,
         layer = layui.layer;
 
     //执行实例
@@ -22,7 +23,9 @@ layui.use(['upload', 'layer'], function(){
             }else{
                 obj  = eval("("+rtnData+")");
             }
-            $(".rstCardJs").show();
+
+            // $(".rstCardJs").load(location.href + " .rstCardJs");
+            //
             $(".netTitleJs").html(obj.fileName);
         }
         ,error: function(){

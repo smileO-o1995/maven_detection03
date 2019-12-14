@@ -34,6 +34,7 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
                 layer.alert(obj.msg, {
                     skin: 'layui-layer-molv' //样式类名
                 });
+                return;
             }
         });
 
@@ -48,6 +49,7 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
                 layer.alert(obj1.msg, {
                     skin: 'layui-layer-molv' //样式类名
                 });
+                return;
             }
         });
 
@@ -63,13 +65,15 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
                 layer.alert(obj2.msg, {
                     skin: 'layui-layer-molv' //样式类名
                 });
+                return;
             }
         });
 
         console.info(characterName);
         console.info(dctMethod);
 
-        if(count != 0){
+        if(count == 3){
+            $(".rstCardJs").show();
 
             //1、格式化网表
             $.get("formatServlet", function(data3) {
