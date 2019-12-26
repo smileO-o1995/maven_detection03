@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>统计结果</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="lib/layui-v2.5.4/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css" media="all">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" media="all">
+    <style>
+        .layui-card {border:1px solid #f2f2f2;border-radius:5px;}
+        .icon {margin-right:10px;color:#1aa094;}
+        .rst {margin-right:10px;color: #367080;text-align: center;font-size: 18px;margin-top: 15px}
+    </style>
+</head>
+<body>
+<div class="layuimini-container">
+    <div class="layuimini-main">
+        <div class="layui-card">
+            <div class="layui-card-header"><i class="fa fa-bar-chart icon">统计表格</i></div>
+            <div class="layui-card-body">
+                <table class="layui-hide" id="currentTableId" lay-filter="currentTableFilter"></table>
+
+                <p class="rst count"></p>
+                <hr style="margin-top: 15px">
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="lib/layui-v2.5.4/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['form', 'table'], function () {
+        var $ = layui.jquery,
+            form = layui.form,
+            table = layui.table;
+
+        table.render({
+            elem: '#currentTableId',
+            height:350,
+            url: 'showTestCountServlet',
+            // page: true,//开启分页
+            cols: [[
+                {type: "checkbox", fixed: "left"},
+                {field: 'id', title:'id', hide:true},
+                {field: 'netlistName', title: '网表'},
+                {field: 'trojanType', title: '是否被木马入侵'},
+                {field: 'method', title: '检测方式'},
+                {field: 'detectionType', title: '检测类别'},
+                {field: 'detectionRate', title: '检测率'},
+                {field: 'falseAlarmRate', title: '虚警率'},
+                {field: 'rstState',  title: '类型判定是否正确'}
+            ]],
+            done: function (res,curr,count) {
+                exportData = res.data;
+                console.info(exportData);
+                var len = exportData.length;
+                var detectionRateSum = 0;
+                var falseAlarmRateSum = 0;
+                var detectionRate;
+                var falseAlarmRate;
+                for(var i = 0; i < len; i++){
+                    detectionRate = exportData[i].detectionRate;
+                    falseAlarmRate = exportData[i].falseAlarmRate;
+                    if(detectionRate == null){
+                        if(exportData[i].rstState == "是"){//无--无
+                            detectionRateSum += 100;
+                            falseAlarmRateSum += 0;
+                        }else{//无--有   有--无
+                            detectionRateSum += 0;
+                            falseAlarmRateSum += 100;
+                        }
+                    }else{
+                        detectionRate = parseFloat(detectionRate.substring(0, detectionRate.lastIndexOf("%")));
+                        falseAlarmRate = parseFloat(falseAlarmRate.substring(0, falseAlarmRate.lastIndexOf("%")));
+                        detectionRateSum += detectionRate;
+                        falseAlarmRateSum += falseAlarmRate;
+                    }
+                }
+
+                $(".count").html("平均检测率:"+ detectionRateSum/len + "%" +
+                    "&ensp;&ensp;&ensp;&ensp;平均虚警率：" + falseAlarmRateSum/len + "%");
+            }
+        });
+
+        // //监听表格复选框选择
+        // table.on('checkbox(currentTableFilter)', function (obj) {
+        //     console.log(obj)
+        // });
+
+    });
+</script>
+<script>
+
+</script>
+
+</body>
+</html>

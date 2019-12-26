@@ -141,7 +141,7 @@ public class TrojanDetection {
                 map.put("msg", "检测错误，该无木马网表被检测为木马网表");
                 netResult.setRstState(false);
 
-            }else{
+            }else{//无--无
                 map.put("stat",true);
                 map.put("normal",true);
                 map.put("msg", "检测正确，该网表被判断为无木马网表");
@@ -151,12 +151,12 @@ public class TrojanDetection {
             }
         }else{//有
             netResult.setTrojanType(true);
-            if(successNum == 0){
+            if(successNum == 0){//有--无
                 map.put("stat", false);
                 map.put("msg","检测错误，该有木马网表被检测为无木马网表");
                 netResult.setRstState(false);
 
-            }else {
+            }else {//有--有
                 map.put("stat", true);
                 map.put("normal", false);
                 map.put("msg","检测正确，该有木马网表被检测为有木马网表");

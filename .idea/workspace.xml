@@ -2,41 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78a7128c-ddb2-4b4f-9777-10756d780f15" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/TestCount.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/domain/NetResult.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/ResultService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/ResultServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlet/refresh/RefreshServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/util/DruidConnection.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/RS232-T1000_Tjin.v" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/form-step12.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep2.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/maven_detection03_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/maven_detection03_war_exploded.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlet/testCountShow/ShowTestCountServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/table.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/maven_detection03.iml" afterPath="$PROJECT_DIR$/maven_detection03.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/TestCount.java" afterPath="$PROJECT_DIR$/src/main/java/dao/TestCount.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ResultService.java" afterPath="$PROJECT_DIR$/src/main/java/service/ResultService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ResultServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/service/ResultServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/TrojanDetection.java" afterPath="$PROJECT_DIR$/src/main/java/service/TrojanDetection.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/commitForm/DetectionServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/commitForm/DetectionServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/RS232-T1200_Tjin.v" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/RS232-T1200_Tjin_re.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/cValue.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/edgesInfo.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/inputInfo.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/outputInfo.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/vertexInfo.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/druid.properties" afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/RS232-T1000_Tjin.v" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/api/init.json" afterPath="$PROJECT_DIR$/src/main/webapp/api/init.json" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/form-step11.html" afterPath="$PROJECT_DIR$/src/main/webapp/form-step11.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/myUpload.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/myUpload.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep2.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep2.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/api/table.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/form-step10.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/form-step11.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/form-step12.html" afterPath="$PROJECT_DIR$/src/main/webapp/form-step12.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/form-step7.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/form-step8.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs/pdfExport.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs/pdfExport.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/form-step9.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/table.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/welcome-1.html" afterPath="$PROJECT_DIR$/src/main/webapp/page/welcome-1.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,53 +50,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestCountImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java">
+      <file leaf-file-name="table.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1817">
-              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="377">
+              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1577156062110" expanded="true" signature="727:894" ph="INSERT INTO test_count... " />
-                <marker date="1577156062110" expanded="true" signature="727:896" ph="INSERT INTO test_count... " />
-                <marker date="1577156062110" expanded="true" signature="1463:1549" ph="INSERT INTO test_count... " />
-                <marker date="1577156062110" expanded="true" signature="1463:1861" ph="INSERT INTO test_count... " />
-                <marker date="1577156062110" expanded="true" signature="1986:2054" ph="INSERT INTO test_count... " />
-                <marker date="1577156062110" expanded="true" signature="1986:2072" ph="INSERT INTO test_count... " />
-                <marker date="1577156062110" expanded="true" signature="2443:2511" ph="INSERT INTO test_count... " />
-                <marker date="1577156062110" expanded="true" signature="2443:2539" ph="INSERT INTO test_count... " />
+                <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restep2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep2.js">
+      <file leaf-file-name="ShowTestCountServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlet/testCountShow/ShowTestCountServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3772">
-              <caret line="164" column="31" lean-forward="false" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="31" />
-              <folding>
-                <element signature="e#6240#6806#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restep1_2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="26" column="22" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="26" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restep3.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="261">
+              <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -118,8 +75,8 @@
       <file leaf-file-name="restep4.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+            <state relative-caret-position="-115">
+              <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
               <folding>
                 <marker date="1577237516337" expanded="true" signature="1536:1542" ph=" " />
                 <marker date="1577237516337" expanded="true" signature="1542:1548" ph=" " />
@@ -130,64 +87,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="welcome-1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/welcome-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+            <state relative-caret-position="190">
+              <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oneStep.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js">
+      <file leaf-file-name="clear.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/api/clear.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-              <folding>
-                <marker date="1577263628312" expanded="true" signature="14742:14748" ph=" " />
-                <marker date="1577263628312" expanded="true" signature="14748:14754" ph=" " />
-                <marker date="1577263628312" expanded="true" signature="15108:15114" ph=" " />
-                <marker date="1577263628312" expanded="true" signature="15114:15120" ph=" " />
-              </folding>
+            <state relative-caret-position="69">
+              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oneStep2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep2.js">
+      <file leaf-file-name="init.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/api/init.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1679">
-              <caret line="73" column="71" lean-forward="false" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
-              <folding>
-                <element signature="e#7411#11709#0" expanded="false" />
-                <element signature="e#11739#16725#0" expanded="false" />
-                <marker date="1577264926587" expanded="true" signature="16993:16999" ph=" " />
-                <marker date="1577264926587" expanded="true" signature="16999:17005" ph=" " />
-                <marker date="1577264926587" expanded="true" signature="17359:17365" ph=" " />
-                <marker date="1577264926587" expanded="true" signature="17365:17371" ph=" " />
-              </folding>
+            <state relative-caret-position="140">
+              <caret line="30" column="10" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form-step12.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="form-step12.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step12.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7567">
-              <caret line="329" column="21" lean-forward="false" selection-start-line="329" selection-start-column="21" selection-end-line="329" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RefreshServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlet/refresh/RefreshServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="185">
+              <caret line="391" column="20" lean-forward="true" selection-start-line="391" selection-start-column="20" selection-end-line="391" selection-end-column="20" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,16 +135,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>myStep2Form</find>
       <find>KMeansRun</find>
       <find>chooseCenterCluster</find>
       <find>已经存在</find>
@@ -237,6 +173,7 @@
       <find>reChoose</find>
       <find>noteStep3</find>
       <find>tdStep4</find>
+      <find>currentTableId</find>
     </findStrings>
     <dirStrings>
       <dir>E:\IDEASpace\maven_detection03\src\main\resource</dir>
@@ -253,16 +190,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/demo.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/tableSpan.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/table.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/restep2.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/restep1.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/welcome-1.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/pdfjs/html2canvas.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/test.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/pdfExport.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/restep4.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/pdfjs/jsPdf.debug.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/lay-config.js" />
@@ -278,32 +208,39 @@
         <option value="$PROJECT_DIR$/src/main/webapp/form-step10.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/myUpload.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/form-step11.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/api/init.json" />
         <option value="$PROJECT_DIR$/src/main/webapp/c3p0-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/test/TestCon.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/netResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/NetResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/TrojanDetection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/ResultService.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/commitForm/DetectionServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/TestCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/ResultServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resource/c3p0-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/util/JDBCUtils.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/druid.properties" />
         <option value="$PROJECT_DIR$/src/main/java/util/DruidConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/druid.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/refresh/RefreshServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep2.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/form-step12.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep2.js" />
+        <option value="$PROJECT_DIR$/src/main/java/service/TrojanDetection.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/pdfExport.js" />
+        <option value="$PROJECT_DIR$/src/main/java/service/ResultService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/TestCount.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/table.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/druid.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/service/ResultServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/testCountShow/ShowTestCountServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/table.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/trans.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/form-step13.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/welcome-1.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/api/init.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/form-step12.html" />
       </list>
     </option>
   </component>
@@ -345,10 +282,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-40" />
-    <option name="y" value="22" />
-    <option name="width" value="1381" />
-    <option name="height" value="741" />
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -377,6 +314,140 @@
               <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
               <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="commitForm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="nextStep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="oneStepCommit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="refresh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="testCountShow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="myJs2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -395,23 +466,23 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\js\myJs2" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IDEASpace\maven_detection03\src\main\webapp" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\page" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\js\myJs" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\images" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\resources" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\WEB-INF" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\resource" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\java\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="servlet.oneStepCommit" />
       <recent name="util" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IDEASpace\maven_detection03\src\main\resources" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\WEB-INF" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\resource" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\java\resources" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\java" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\js\myJs2" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\page" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\js\myJs" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -619,7 +690,7 @@
       <workItem from="1577106919624" duration="16718000" />
       <workItem from="1577176255045" duration="2434000" />
       <workItem from="1577238225956" duration="8563000" />
-      <workItem from="1577324156877" duration="145000" />
+      <workItem from="1577324156877" duration="24157000" />
     </task>
     <task id="LOCAL-00001" summary="网表测试">
       <created>1575015256728</created>
@@ -677,14 +748,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576293440765</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1、添加了数据库，用于存放统计数据&#10;2、较不完善地解决了长时间后台作业，保证sessionID有效的问题">
+      <created>1577324460281</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1577324460281</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333127000" />
+    <option name="totallyTimeSpent" value="357139000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1456" height="916" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -693,14 +771,14 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21482602" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19269341" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43367347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26578948" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298292" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.7051282" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20916906" sideWeight="0.2948718" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24713467" sideWeight="0.6949495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473525" sideWeight="0.30645162" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3116046" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -722,7 +800,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21482602" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08166189" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -739,10 +817,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43367347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26578948" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298292" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.7051282" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20916906" sideWeight="0.2948718" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24713467" sideWeight="0.6949495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473525" sideWeight="0.30645162" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298292" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -763,7 +841,8 @@
     <MESSAGE value="1、修改了重复操作，导致的页面元素重复出现的问题" />
     <MESSAGE value="添加了一站式检测的方式" />
     <MESSAGE value="添加了一站式检测的方式2" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了一站式检测的方式2" />
+    <MESSAGE value="1、添加了数据库，用于存放统计数据&#10;2、较不完善地解决了长时间后台作业，保证sessionID有效的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、添加了数据库，用于存放统计数据&#10;2、较不完善地解决了长时间后台作业，保证sessionID有效的问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -779,69 +858,11 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="87" column="22" lean-forward="true" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/form-step7.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/form-step9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="39" column="40" lean-forward="true" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="52" column="51" lean-forward="false" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/form-step8.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/jquery-1.7.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="8980" column="4" lean-forward="false" selection-start-line="8980" selection-start-column="4" selection-end-line="8980" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/lay-module/step-lay/step.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-644">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/lay-module/step-lay/step.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/restep1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/restep1_2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
@@ -905,13 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/api/init.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step11.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4600">
@@ -923,20 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/TrojanDetection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="150" column="13" lean-forward="false" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/ResultService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="69" lean-forward="false" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -965,6 +965,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -972,13 +973,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/test/TestCon.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/util/JDBCUtils.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/druid.properties.tld" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/TestCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java1/jdk1.8.0_191/src.zip!/java/util/Properties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6877">
@@ -986,31 +980,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/druid.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/ResultServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/commitForm/DetectionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/commitForm/CharacterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1403">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1025,6 +998,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#DruidConnection#0;class#DruidConnection#0" expanded="false" />
+            <element signature="method#getInstace#0;class#DruidConnection#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,6 +1010,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,24 +1019,6 @@
         <state relative-caret-position="414">
           <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1817">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1577156062110" expanded="true" signature="727:894" ph="INSERT INTO test_count... " />
-            <marker date="1577156062110" expanded="true" signature="727:896" ph="INSERT INTO test_count... " />
-            <marker date="1577156062110" expanded="true" signature="1463:1549" ph="INSERT INTO test_count... " />
-            <marker date="1577156062110" expanded="true" signature="1463:1861" ph="INSERT INTO test_count... " />
-            <marker date="1577156062110" expanded="true" signature="1986:2054" ph="INSERT INTO test_count... " />
-            <marker date="1577156062110" expanded="true" signature="1986:2072" ph="INSERT INTO test_count... " />
-            <marker date="1577156062110" expanded="true" signature="2443:2511" ph="INSERT INTO test_count... " />
-            <marker date="1577156062110" expanded="true" signature="2443:2539" ph="INSERT INTO test_count... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1082,31 +1043,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <marker date="1577237516337" expanded="true" signature="1536:1542" ph=" " />
-            <marker date="1577237516337" expanded="true" signature="1542:1548" ph=" " />
-            <marker date="1577237516337" expanded="true" signature="1938:1944" ph=" " />
-            <marker date="1577237516337" expanded="true" signature="1944:1950" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
           <caret line="26" column="22" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="26" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step12.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7567">
-          <caret line="329" column="21" lean-forward="false" selection-start-line="329" selection-start-column="21" selection-end-line="329" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1136,11 +1076,191 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/pdfjs/jsPdf.debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10179">
+          <caret line="1168" column="16" lean-forward="false" selection-start-line="1168" selection-start-column="16" selection-end-line="1168" selection-end-column="16" />
+          <folding>
+            <marker date="1575201168195" expanded="true" signature="326224:326244" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/pdfExport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/api/table.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/TestCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        <state relative-caret-position="253">
+          <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/ResultService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/ResultServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/TrojanDetection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/commitForm/CharacterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="37" column="49" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="150" column="9" lean-forward="false" selection-start-line="150" selection-start-column="9" selection-end-line="150" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#saveNetList#0;class#TestCountImpl#0" expanded="false" />
+            <marker date="1577348466710" expanded="true" signature="3751:3840" ph="SELECT id, n... " />
+            <marker date="1577348466710" expanded="true" signature="3751:3856" ph="SELECT (id, test_count" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/testCountShow/ShowTestCountServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/api/clear.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/trans.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step13.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="319" column="55" lean-forward="true" selection-start-line="319" selection-start-column="12" selection-end-line="319" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/api/init.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="30" column="10" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/welcome-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step14.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding>
+            <marker date="1577237516337" expanded="true" signature="1536:1542" ph=" " />
+            <marker date="1577237516337" expanded="true" signature="1542:1548" ph=" " />
+            <marker date="1577237516337" expanded="true" signature="1938:1944" ph=" " />
+            <marker date="1577237516337" expanded="true" signature="1944:1950" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step12.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="391" column="20" lean-forward="true" selection-start-line="391" selection-start-column="20" selection-end-line="391" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

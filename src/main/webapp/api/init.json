@@ -19,22 +19,9 @@
       "child": [
         {
           "title": "测试版的木马检测",
-          "href": "",
+          "href": "form-step12.html",
           "icon": "fa fa-stack-overflow",
-          "target":"_self",
-          "child":[
-            {
-              "title": "步骤条检测方式",
-              "href": "form-step8.html",
-              "icon": "fa fa-stack-overflow",
-              "target": "_self"
-            },{
-              "title": "一站式检测方式",
-              "href": "form-step10.html",
-              "icon": "fa fa-stack-overflow",
-              "target": "_self"
-            }
-          ]
+          "target":"_self"
         },
         {
           "title": "应用版的木马检测",
@@ -43,8 +30,8 @@
           "target": "_self"
         },
         {
-          "title": "概念说明",
-          "href": "page/table.html",
+          "title": "统计结果",
+          "href": "table.html",
           "icon": "fa fa-file-text",
           "target": "_self"
         }

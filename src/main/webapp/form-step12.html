@@ -386,29 +386,19 @@
             $(".rstCardJs").hide();
         });
 
-        //1、页面刷新
-        // $(".refreshBtn").click(function () {
-        //     location.reload();
-        // });
-
-        // $(function () {
-        //     var fileName = $(".netTitleJs").html();
-        //     console.info(fileName);
-        //     var index = layer.confirm('请选择一站式检测方式或步骤条检测方式', {
-        //         btn: ['一站式检测方式','步骤条检测方式'] //按钮
-        //     }, function(){
-        //         var fileName = $(".netTitleJs").html();
-        //         console.info(fileName);
-        //         $("#mode1").hide();
-        //         $("#mode2").show();
-        //         layer.close(index);
-        //     }, function(){
-        //         var fileName = $(".netTitleJs").html();
-        //         console.info(fileName);
-        //         layer.close(index);
-        //     });
-        //
-        // });
+        //3、点击“查看数据”
+        $(".countRst").click(function () {
+            layer.open({
+                type: 2,
+                title: false,
+                area: ['700px', '450px'],
+                shade: 0.8,
+                closeBtn: 0,
+                shadeClose: true,
+                content: 'table.html'
+            });
+            // location.href("table.html");
+        });
 
     });
 </script>
