@@ -2,7 +2,11 @@ package servlet.commitForm;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import domain.NetInfo;
+import domain.NetResult;
+import service.ResultService;
+import service.ResultServiceImpl;
 import service.TrojanDetection;
+import sun.nio.ch.Net;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,10 +24,15 @@ import java.util.Map;
  * （1）如果单选框内容为空，返回{stat：false, msg:"请选择检测方式"}
  * （2）根据提交的内容，进入到TrojanDetection模块中
  * @author wen
- * @date 2019/11/28 0028-15:14
  */
 @WebServlet("/detectionServlet")
 public class DetectionServlet extends HttpServlet {
+    /**
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         /*
          * 中文乱码的问题以及返回response的样式
@@ -55,12 +64,21 @@ public class DetectionServlet extends HttpServlet {
         //3、获取session中的数据
         HttpSession session = request.getSession();
         ArrayList<NetInfo> netInfos = (ArrayList<NetInfo>) session.getAttribute("netInfos");
+        String fileName = (String)session.getAttribute("fileName");
 
         //4、根据characterNames的不同，进行不同的数据处理（这里需要后序再来完善，这里只有一种，即提取CC0/CC1/CO的值）
         if("kmeans".equals(dctMethod)){
             //4.1将数据netInfos提交给TrojanDetection类中
             TrojanDetection detection = new TrojanDetection();
             Map<String,Object> resData = detection.detectEnter(netInfos);
+
+            //(4.4)将检测数据传入数据库，首先在这里封装对象
+            NetResult netResult = (NetResult)resData.get("netResult");
+            resData.remove("netResult");
+            netResult.setNetlistName(fileName);
+            netResult.setMethod("kmeans");
+            ResultService save = new ResultServiceImpl();
+            save.saveNetResult(netResult, "test_count");
 
             //再次封装修改后的netInfos数据
             session.setAttribute("netInfos",netInfos);
@@ -75,6 +93,8 @@ public class DetectionServlet extends HttpServlet {
             map.put("yAxisName", "CO");
             //（4.3）封装legend数据和seriesData数据
             map.put("resData", resData);
+
+
 
         }else{
 

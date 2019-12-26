@@ -31,6 +31,7 @@
         .mytitle {line-height:28px;font-size:14px;padding-left: 150px; padding-top: 10px;}
         .mycontent {line-height:28px;font-size:13px;padding-left: 170px;}
         .mychartStyle {padding-left: 170px;}
+        .mytableText {text-align: center;}
     </style>
 </head>
 <body>
@@ -114,6 +115,12 @@
                                                 <input type="radio" name="dctMethod" value="kmeans" title="k-means聚类" checked>
                                                 <input type="radio" name="dctMethod" value="dbscan" title="DBSCAN">
                                                 <!--<input type="radio" name="dctMethid" value="some" title="其他" disabled>-->
+                                            </div>
+                                        </div>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">备注说明：</label>
+                                            <div class="layui-input-block">
+                                                <textarea placeholder="备注信息" value="" class="layui-textarea"></textarea>
                                             </div>
                                         </div>
                                     </form>
@@ -204,74 +211,82 @@
                     <div class="layui-card-body">
 
                         <div id="myStep5" style="display: none; align-content: left">
-                            <div>
-                                <button class="layui-btn layui-btn-primary refreshBtn1">重新开始步骤条检测</button>
-                                <button class="layui-btn layui-btn-primary refreshBtn2">重新开始一站式检测</button>
-                                <button class="layui-btn saveRst">保存数据</button>
+                            <div class="layui-btn-group">
+                                <button class="layui-btn refreshBtn1" type="button">重新开始步骤条检测</button>
+                                <button class="layui-btn refreshBtn2" type="button">重新开始一站式检测</button>
+                                <button class="layui-btn saveRst" type="button">保存数据</button>
+                                <button class="layui-btn countRst" type="button">查看统计数据</button>
                             </div>
                         </div>
 
                         <div class="layui-text"  id="exportTable">
                             <table class="layui-table myTable">
                                 <colgroup>
-                                    <col width="150">
-                                    <col width="600">
+                                    <col width="10%">
+                                    <col width="40%">
+                                    <col width="10%">
+                                    <col width="40%">
                                 </colgroup>
                                 <tbody>
                                 <!--step1-->
                                 <tr>
-                                    <td>网表名称</td>
-                                    <td class="netTitleJs"></td>
+                                    <td class="mytableText">网表名称</td>
+                                    <td class="netTitleJs" colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="mytableText">网表信息</td>
+                                    <td colspan="2" class="mytableText">检测信息</td>
                                 </tr>
 
                                 <!--step1_2-->
                                 <tr class="trStep1_2" style="display: none;">
-                                    <td>网表类别</td>
+                                    <td class="mytableText">网表类别</td>
                                     <td class="netType"></td>
+
+                                    <td class="mytableText"><div class="trStep3_1" style="display: none;">判定类别</div></td>
+                                    <td class="tdStep3_1"></td>
                                 </tr>
+
                                 <!--step1_2_1当有木马的时候需要执行下面这一个部分-->
                                 <tr class="trStep1_2_1" style="display:none;">
-                                    <td>触发节点</td>
+                                    <td class="mytableText">触发节点</td>
                                     <td><p class="tdStep1_2_1"></p></td>
+
+                                    <td class="mytableText"><div class="trStep3_2" style="display: none;">木马节点</div></td>
+                                    <td class="tdStep3_2"></td>
                                 </tr>
+
                                 <tr class="trStep1_2_2" style="display: none;">
-                                    <td>有效载荷节点</td>
+                                    <td class="mytableText">有效载荷节点</td>
                                     <td><p class="tdStep1_2_2"></p></td>
+                                    <td class="mytableText"></td>
+                                    <td></td>
                                 </tr>
 
                                 <!--step2-->
                                 <tr class="trStep2" style="display: none;">
-                                    <td>特征值分布图</td>
+                                    <td class="mytableText">特征值分布图</td>
                                     <td><div id="echarts-feature" style="width:350px;height:350px;"></div></td>
-                                </tr>
 
-                                <!--step3-->
-                                <tr class="trStep3" style="display: none;">
-                                    <td>检测结果图</td>
+                                    <td class="mytableText"><div class="trStep3" style="display: none;">检测结果图</div></td>
                                     <td><div id="echarts-detect" style="width:350px;height:350px;"></div></td>
                                 </tr>
-                                <tr class="trStep3_1" style="display: none;">
-                                    <td>判定结果</td>
-                                    <td class="tdStep3_1"></td>
-                                </tr>
+
                                 <!--下面为当网表为木马网表时才会显示-->
-                                <tr class="trStep3_2" style="display: none;">
-                                    <td>木马节点</td>
-                                    <td class="tdStep3_2"></td>
-                                </tr>
+
                                 <tr class="trStep3_3" style="display: none;">
-                                    <td>木马触发点识别率</td>
-                                    <td class="tdStep3_3"></td>
+                                    <td class="mytableText">木马触发点识别率</td>
+                                    <td class="tdStep3_3" colspan="3"></td>
                                 </tr>
                                 <tr class="trStep3_4" style="display: none;">
-                                    <td>木马虚警率</td>
-                                    <td class="tdStep3_4"></td>
+                                    <td class="mytableText">木马虚警率</td>
+                                    <td class="tdStep3_4" colspan="3"></td>
                                 </tr>
 
                                 <!--step4-->
                                 <tr class="trStep4" style="display: none;">
-                                    <td>木马定位</td>
-                                    <td class="tdStep4"></td>
+                                    <td class="mytableText">木马定位</td>
+                                    <td class="tdStep4" colspan="3"></td>
                                 </tr>
                             </table>
                         </div>
@@ -313,7 +328,7 @@
 <script type="text/javascript" src="js/myJs/pdfExport.js"></script>
 
 <!--一站式检测的“开始检测”事件-->
-<script type="text/javascript" src="js/myJs2/oneStep.js"></script>
+<script type="text/javascript" src="js/myJs2/oneStep2.js"></script>
 
 <script type="text/javascript">
     layui.use([ 'form', 'step', 'layer'], function () {

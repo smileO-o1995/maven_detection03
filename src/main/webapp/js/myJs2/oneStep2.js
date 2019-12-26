@@ -1,3 +1,4 @@
+//区别于oneStep.js的是：不使用同步的方式控制ajax请求的顺序，而是使用递归调用的方式
 layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
     var $ = layui.$,
         form = layui.form,
@@ -5,7 +6,7 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
         step = layui.step,
         layer = layui.layer;
 
-    $.ajaxSettings.async = false;
+    // $.ajaxSettings.async = false;
     /**
      * 1、按钮OneStepCommitBtn点击事件，首先判断是否可以开始进行检测
      * 判断有3：
@@ -30,6 +31,88 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
             var obj = myReplace(data);
             if(obj.existFile){
                 count++;
+                //2、判断特征选择是否在我们的能力范围内
+                $.post("conformCharacterServlet", characterName, function (data1) {
+                    console.info("执行到2");
+                    var obj1 = myReplace(data1);
+                    if(obj1.sta){
+                        count++;
+                        //3、判断检测方式是否可以测试
+                        $.post("conformDctServlet", dctMethod, function (data2) {
+                            var obj2 = myReplace(data2);
+                            if(obj2.sta){
+                                //可以开始检测了
+                                console.info("可以开始检测了");
+                                count++;
+                                console.info(characterName);
+                                console.info(dctMethod);
+
+                                if(count == 3){
+                                    $(".netTitleJs").html(fileName);
+                                    $(".rstCardJs").show();
+                                    var index = layer.msg("<i class='layui-icon layui-icon-loading'></i>正在努力检测中，请耐心等待",{time:-1});
+                                    var iCount = setInterval(refresh(), 60000 * 4);
+
+                                    //1、格式化网表
+                                    $.get("formatServlet", function(data3) {
+                                        var obj3 = myReplace(data3)
+                                        format(obj3);
+                                        //2、选择特征向量
+                                        $.post("characterServlet", characterName, function (data4) {
+                                            var obj4 = myReplace(data4);
+                                            character(obj4);
+                                            //3、选择检测方式
+                                            $.post("detectionServlet", dctMethod, function (data5) {
+                                                var obj5 = myReplace(data5);
+                                                detection(obj5);
+                                                //4、是否需要定位
+                                                var note = $(".noteStep3").html();
+                                                if(note == "pass"){
+                                                    //定位
+                                                    $.get("locationServlet", function (data6) {
+                                                        var obj6 = myReplace(data6);
+                                                        location(obj6);
+                                                        layer.close(index);
+                                                        clearInterval(iCount);
+                                                    });
+                                                }else{
+                                                    if("error" == note){
+                                                        layer.alert('抱歉，该网表检测出现反向判断错误。'+ '<br>'+'可下拉页面，查看测试数据', {
+                                                            skin: 'layui-layer-molv' //样式类名
+                                                        });
+                                                    }else if("right" == note){
+                                                        layer.alert('good，该网表检测正确，为无木马网表。'+ '<br>'+ '可下拉页面，查看测试数据', {
+                                                            skin: 'layui-layer-molv' //样式类名
+                                                        });
+                                                    }
+                                                    $("#myStep5").show();
+                                                    layer.close(index);
+                                                    clearInterval(iCount);
+                                                }
+                                            });
+                                        });
+                                    });
+
+                                }else{
+                                    console.info("count = " + count);
+                                }
+
+                            }else{
+                                console.info("检测方式");
+                                layer.alert(obj2.msg, {
+                                    skin: 'layui-layer-molv' //样式类名
+                                });
+                                return;
+                            }
+                        });
+                    }else{
+                        console.info("特征选择判断");
+                        layer.alert(obj1.msg, {
+                            skin: 'layui-layer-molv' //样式类名
+                        });
+                        return;
+                    }
+                });
             }else{
                 console.info("文件上传是否正确");
                 layer.alert(obj.msg, {
@@ -38,85 +121,6 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
                 return;
             }
         });
-
-        //2、判断特征选择是否在我们的能力范围内
-        $.post("conformCharacterServlet", characterName, function (data1) {
-            console.info("执行到2");
-            var obj1 = myReplace(data1);
-            if(obj1.sta){
-                count++;
-            }else{
-                console.info("特征选择判断");
-                layer.alert(obj1.msg, {
-                    skin: 'layui-layer-molv' //样式类名
-                });
-                return;
-            }
-        });
-
-        //3、判断检测方式是否可以测试
-        $.post("conformDctServlet", dctMethod, function (data2) {
-            var obj2 = myReplace(data2);
-            if(obj2.sta){
-                //可以开始检测了
-                console.info("可以开始检测了");
-                count++;
-            }else{
-                console.info("检测方式");
-                layer.alert(obj2.msg, {
-                    skin: 'layui-layer-molv' //样式类名
-                });
-                return;
-            }
-        });
-
-        console.info(characterName);
-        console.info(dctMethod);
-
-        if(count == 3){
-            $(".netTitleJs").html(fileName);
-            $(".rstCardJs").show();
-
-            //1、格式化网表
-            $.get("formatServlet", function(data3) {
-                var obj3 = myReplace(data3)
-                format(obj3);
-            });
-            //2、选择特征向量
-            $.post("characterServlet", characterName, function (data4) {
-                var obj4 = myReplace(data4);
-                character(obj4);
-            });
-
-            //3、选择检测方式
-            $.post("detectionServlet", dctMethod, function (data5) {
-                var obj5 = myReplace(data5);
-                detection(obj5);
-            });
-
-            //4、是否需要定位
-            var note = $(".noteStep3").html();
-            if(note == "pass"){
-                //定位
-                $.get("locationServlet", function (data6) {
-                    var obj6 = myReplace(data6);
-                    location(obj6);
-                });
-            }else{
-                if("error" == note){
-                    layer.alert('抱歉，该网表检测出现反向判断错误。'+ '<br>'+'可下拉页面，查看测试数据', {
-                        skin: 'layui-layer-molv' //样式类名
-                    });
-                }else if("right" == note){
-                    layer.alert('good，该网表检测正确，为无木马网表。'+ '<br>'+ '可下拉页面，查看测试数据', {
-                        skin: 'layui-layer-molv' //样式类名
-                    });
-                }
-                $("#myStep5").show();
-            }
-        }else{
-            console.info("count = " + count);
-        }
 
     });
 
@@ -465,4 +469,12 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
 
         $(".uploadNote").html("");
     }
+
+    function refresh(){
+        console.info("执行刷新部分");
+        $.get("refreshServlet",function (data) {
+            console.info("刷新");
+        });
+    }
+
 });

@@ -19,6 +19,13 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
     $(".step3CommitBtn").click(function () {
         //弹出层
         var index = layer.msg("<i class='layui-icon layui-icon-loading'></i>正在进行木马检测，请耐心等待",{time:-1});
+        window.setInterval(function() {
+            console.info("执行刷新部分");
+            $.get("refreshServlet",function (data) {
+                console.info("刷新");
+            });
+        }, 60000 * 4);
+
         //发送ajax请求
         $.post("detectionServlet", $("#myStep3Form").serialize(), function (data) {
             var obj;
@@ -28,6 +35,7 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
             }else{
                 obj  = eval("("+data+")");
             }
+            window.clearTimeout();
             if(!obj.sta){
                 //因为用户的原因导致，后台不能检测数据
                 layer.alert(obj.msg, {

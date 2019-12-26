@@ -19,6 +19,12 @@ layui.use([ 'form', 'step', 'layer'], function () {
     $(".step1_2CommitBtn").click(function () {
 
         var index = layer.msg("<i class='layui-icon layui-icon-loading'></i>正在格式化网表，请耐心等待",{time:-1});
+        window.setInterval(function() {
+            console.info("执行刷新部分");
+            $.get("refreshServlet",function (data) {
+                console.info("刷新");
+            });
+        }, 60000 * 4);
         $.get("formatServlet", function (data) {
             var obj;
             //判断是否为json格式
@@ -27,7 +33,7 @@ layui.use([ 'form', 'step', 'layer'], function () {
             }else{
                 obj  = eval("("+data+")");
             }
-
+            window.clearTimeout();
             var trojanNetSet = obj.trojanNetSet;
             var netLength = trojanNetSet.length - 1;
             var trojanPayLoad = obj.trojanPayLoad;

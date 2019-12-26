@@ -26,7 +26,7 @@ layui.use(['upload', 'layer'], function(){
 
             // $(".rstCardJs").load(location.href + " .rstCardJs");
             //
-            $(".netTitleJs").html(obj.fileName);
+            $(".uploadNote").html(obj.fileName);
         }
         ,error: function(){
             layer.alert('文件上传异常，请刷新重试', {

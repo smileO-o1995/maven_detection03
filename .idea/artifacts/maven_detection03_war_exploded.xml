@@ -12,6 +12,8 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.3" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.3" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.3" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:6.0.6" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.5" />
         </element>
       </element>
       <element id="directory" name="META-INF">

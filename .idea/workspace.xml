@@ -2,22 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78a7128c-ddb2-4b4f-9777-10756d780f15" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/RS232-T1200_Tjin.v" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/RS232-T1200_Tjin_re.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/cValue.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/edgesInfo.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/inputInfo.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/outputInfo.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/vertexInfo.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/form-step11.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/TestCount.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/domain/NetResult.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/ResultService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/ResultServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlet/refresh/RefreshServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/util/DruidConnection.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/RS232-T1000_Tjin.v" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/form-step12.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep2.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/maven_detection03_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/maven_detection03_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/maven_detection03.iml" afterPath="$PROJECT_DIR$/maven_detection03.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/RS232-T1000_Tjin.v" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/TrojanDetection.java" afterPath="$PROJECT_DIR$/src/main/java/service/TrojanDetection.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/commitForm/DetectionServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/commitForm/DetectionServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/RS232-T1200_Tjin.v" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/RS232-T1200_Tjin_re.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/cValue.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/edgesInfo.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/inputInfo.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/outputInfo.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/saveData/admin/verAndEdge/vertexInfo.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/api/init.json" afterPath="$PROJECT_DIR$/src/main/webapp/api/init.json" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/form-step10.html" afterPath="$PROJECT_DIR$/src/main/webapp/form-step10.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/form-step8.html" afterPath="$PROJECT_DIR$/src/main/webapp/form-step8.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/form-step11.html" afterPath="$PROJECT_DIR$/src/main/webapp/form-step11.html" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/myUpload.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/myUpload.js" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep2.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep2.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,143 +63,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="form-step10.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step10.html">
+      <file leaf-file-name="TestCountImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="1817">
+              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#11025#11456#0" expanded="false" />
-                <element signature="e#11496#11542#0" expanded="false" />
-                <element signature="e#11584#11630#0" expanded="false" />
-                <element signature="e#11670#11716#0" expanded="false" />
-                <element signature="e#11756#11802#0" expanded="false" />
-                <element signature="e#11843#11890#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form-step11.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step11.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="199" column="45" lean-forward="false" selection-start-line="199" selection-start-column="45" selection-end-line="199" selection-end-column="45" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#12706#12712#0" expanded="true" />
-                <element signature="e#12716#12722#0" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myUpload.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/myUpload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="71" column="27" lean-forward="true" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/api/init.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConformFileServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlet/nextStep/ConformFileServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="28" column="67" lean-forward="false" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="oneStep.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1541">
-              <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-              <folding>
-                <element signature="e#3732#3908#0" expanded="false" />
-                <element signature="e#3936#5084#0" expanded="false" />
-                <element signature="e#5114#9412#0" expanded="false" />
-                <marker date="1576291683591" expanded="true" signature="14698:14704" ph=" " />
-                <marker date="1576291683591" expanded="true" signature="14704:14710" ph=" " />
-                <marker date="1576291683591" expanded="true" signature="15064:15070" ph=" " />
-                <marker date="1576291683591" expanded="true" signature="15070:15076" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form-step8.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step8.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2875">
-              <caret line="125" column="84" lean-forward="false" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="84" />
-              <folding>
-                <element signature="n#script#14;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restep4.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="50" />
-              <folding>
-                <marker date="1575200964838" expanded="true" signature="1296:1302" ph=" " />
-                <marker date="1575200964838" expanded="true" signature="1302:1308" ph=" " />
-                <marker date="1575200964838" expanded="true" signature="1698:1704" ph=" " />
-                <marker date="1575200964838" expanded="true" signature="1704:1710" ph=" " />
+                <element signature="imports" expanded="true" />
+                <marker date="1577156062110" expanded="true" signature="727:894" ph="INSERT INTO test_count... " />
+                <marker date="1577156062110" expanded="true" signature="727:896" ph="INSERT INTO test_count... " />
+                <marker date="1577156062110" expanded="true" signature="1463:1549" ph="INSERT INTO test_count... " />
+                <marker date="1577156062110" expanded="true" signature="1463:1861" ph="INSERT INTO test_count... " />
+                <marker date="1577156062110" expanded="true" signature="1986:2054" ph="INSERT INTO test_count... " />
+                <marker date="1577156062110" expanded="true" signature="1986:2072" ph="INSERT INTO test_count... " />
+                <marker date="1577156062110" expanded="true" signature="2443:2511" ph="INSERT INTO test_count... " />
+                <marker date="1577156062110" expanded="true" signature="2443:2539" ph="INSERT INTO test_count... " />
               </folding>
             </state>
           </provider>
@@ -189,8 +86,107 @@
       <file leaf-file-name="restep2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="34" />
+            <state relative-caret-position="3772">
+              <caret line="164" column="31" lean-forward="false" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="31" />
+              <folding>
+                <element signature="e#6240#6806#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restep1_2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="26" column="22" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="26" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restep3.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="26" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restep4.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="828">
+              <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+              <folding>
+                <marker date="1577237516337" expanded="true" signature="1536:1542" ph=" " />
+                <marker date="1577237516337" expanded="true" signature="1542:1548" ph=" " />
+                <marker date="1577237516337" expanded="true" signature="1938:1944" ph=" " />
+                <marker date="1577237516337" expanded="true" signature="1944:1950" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="oneStep.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding>
+                <marker date="1577263628312" expanded="true" signature="14742:14748" ph=" " />
+                <marker date="1577263628312" expanded="true" signature="14748:14754" ph=" " />
+                <marker date="1577263628312" expanded="true" signature="15108:15114" ph=" " />
+                <marker date="1577263628312" expanded="true" signature="15114:15120" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="oneStep2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1679">
+              <caret line="73" column="71" lean-forward="false" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+              <folding>
+                <element signature="e#7411#11709#0" expanded="false" />
+                <element signature="e#11739#16725#0" expanded="false" />
+                <marker date="1577264926587" expanded="true" signature="16993:16999" ph=" " />
+                <marker date="1577264926587" expanded="true" signature="16999:17005" ph=" " />
+                <marker date="1577264926587" expanded="true" signature="17359:17365" ph=" " />
+                <marker date="1577264926587" expanded="true" signature="17365:17371" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form-step12.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step12.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7567">
+              <caret line="329" column="21" lean-forward="false" selection-start-line="329" selection-start-column="21" selection-end-line="329" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RefreshServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlet/refresh/RefreshServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -201,15 +197,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>step2CommitBtn</find>
       <find>myStep2Form</find>
       <find>KMeansRun</find>
       <find>chooseCenterCluster</find>
@@ -239,7 +236,11 @@
       <find>提交的数据为空</find>
       <find>reChoose</find>
       <find>noteStep3</find>
+      <find>tdStep4</find>
     </findStrings>
+    <dirStrings>
+      <dir>E:\IDEASpace\maven_detection03\src\main\resource</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -252,33 +253,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/kMeansUtil/DistanceCompute.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/CaculateUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/step2.js" />
-        <option value="$PROJECT_DIR$/src/main/java/kMeansUtil/KMeansRun.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/step1_2.js" />
-        <option value="$PROJECT_DIR$/src/main/java/servlet/nextStep/Step2PermitServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlet/nextStep/Step3PermitServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/NetListRead.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/step3.js" />
-        <option value="$PROJECT_DIR$/src/main/java/service/FeatureExact.java" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/NetInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/OListDG.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlet/commitForm/DetectionServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/location/OListDG.java" />
-        <option value="$PROJECT_DIR$/src/main/java/location/VaryNormalMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlet/commitForm/LocationServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/ReConstruction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/step4.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/login-1.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/form-step7.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/zyUpload.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/demo.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/tableSpan.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/table.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/restep2.js" />
-        <option value="$PROJECT_DIR$/src/main/java/service/TrojanDetection.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/restep1.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/welcome-1.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/pdfjs/html2canvas.js" />
@@ -292,16 +271,38 @@
         <option value="$PROJECT_DIR$/src/main/webapp/page/form-step9.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs/restep1_2.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/lay-module/step-lay/step.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/oneStepCommit/ConformCharacterServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/oneStepCommit/conformDctServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/oneStepCommit/ConformDctServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/form-step8.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/form-step10.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/api/init.json" />
-        <option value="$PROJECT_DIR$/src/main/webapp/form-step11.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/myUpload.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/form-step11.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/api/init.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/c3p0-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/test/TestCon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/netResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/NetResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/TrojanDetection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/ResultService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/commitForm/DetectionServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/TestCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/ResultServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resource/c3p0-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/util/JDBCUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/druid.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/util/DruidConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/druid.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/refresh/RefreshServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep2.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/form-step12.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep2.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -334,15 +335,20 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="maven_detection03" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="maven_detection03" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1382" />
-    <option name="y" value="126" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-40" />
+    <option name="y" value="22" />
+    <option name="width" value="1381" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -360,8 +366,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,186 +377,15 @@
               <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
               <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kMeansUtil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="location" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="commitForm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="nextStep" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="oneStepCommit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lay-module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lay-module" type="462c0819:PsiDirectoryNode" />
-              <item name="step-lay" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="myJs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="myJs2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_detection03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_detection03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -558,20 +395,23 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\js" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\js\myJs2" />
       <recent name="E:\IDEASpace\maven_detection03\src\main\webapp" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\page" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\js\myJs" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\images" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="servlet.oneStepCommit" />
       <recent name="util" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\js\myJs2" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\page" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\js\myJs" />
-      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\images" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEASpace\maven_detection03\src\main\resources" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\webapp\WEB-INF" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\resource" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\java\resources" />
+      <recent name="E:\IDEASpace\maven_detection03\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -771,7 +611,15 @@
       <workItem from="1575959872981" duration="18010000" />
       <workItem from="1576225345937" duration="46000" />
       <workItem from="1576227356845" duration="20026000" />
-      <workItem from="1576292777446" duration="639000" />
+      <workItem from="1576292777446" duration="8830000" />
+      <workItem from="1576740613621" duration="6622000" />
+      <workItem from="1576811540166" duration="9920000" />
+      <workItem from="1576893594214" duration="17199000" />
+      <workItem from="1577091701813" duration="6033000" />
+      <workItem from="1577106919624" duration="16718000" />
+      <workItem from="1577176255045" duration="2434000" />
+      <workItem from="1577238225956" duration="8563000" />
+      <workItem from="1577324156877" duration="145000" />
     </task>
     <task id="LOCAL-00001" summary="网表测试">
       <created>1575015256728</created>
@@ -822,14 +670,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576248085769</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加了一站式检测的方式2">
+      <created>1576293440765</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576293440765</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257302000" />
+    <option name="totallyTimeSpent" value="333127000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1456" height="916" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -838,15 +693,15 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2034384" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21482602" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31710526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43367347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298292" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24140401" sideWeight="0.74181116" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23782235" sideWeight="0.2581888" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.7051282" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20916906" sideWeight="0.2948718" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3116046" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -867,11 +722,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2034384" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21482602" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3116046" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -884,10 +739,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31710526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43367347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298292" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23782235" sideWeight="0.74181116" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23782235" sideWeight="0.2581888" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.7051282" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20916906" sideWeight="0.2948718" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298292" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -907,7 +762,8 @@
     <MESSAGE value="测试版的硬件木马检测 功能已经全部完成" />
     <MESSAGE value="1、修改了重复操作，导致的页面元素重复出现的问题" />
     <MESSAGE value="添加了一站式检测的方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了一站式检测的方式" />
+    <MESSAGE value="添加了一站式检测的方式2" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了一站式检测的方式2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -923,132 +779,11 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/layuimini.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/zyUpload.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5403">
-          <caret line="72" column="1" lean-forward="false" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/step1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/zyUpload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="91" column="22" lean-forward="false" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/tableSpan.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/step2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/step3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="137" column="17" lean-forward="false" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/nextStep/Step3PermitServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/test.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/welcome-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1794">
-          <caret line="78" column="17" lean-forward="false" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/pdfExport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/pdfjs/jsPdf.debug.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1301">
-          <caret line="2237" column="12" lean-forward="false" selection-start-line="2237" selection-start-column="12" selection-end-line="2237" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/lay-module/echarts/echartsTheme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/lay-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/restep4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/lay-module/echarts/echarts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210254">
-          <caret line="96098" column="21" lean-forward="false" selection-start-line="96098" selection-start-column="21" selection-end-line="96098" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/restep2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/restep3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3542">
-          <caret line="154" column="49" lean-forward="false" selection-start-line="154" selection-start-column="49" selection-end-line="154" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/pdfjs/html2canvas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5934">
-          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page/table.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1100,14 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/commitForm/UploadFileServlet2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="111" column="21" lean-forward="false" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs/restep1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -1126,15 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/commitForm/DetectionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="20" column="14" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="20" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1149,15 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="63" column="11" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="63" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1168,56 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="215" column="9" lean-forward="false" selection-start-line="184" selection-start-column="8" selection-end-line="215" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/TrojanDetection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/commitForm/CharacterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="47" column="33" lean-forward="false" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <marker date="1575200964838" expanded="true" signature="1296:1302" ph=" " />
-            <marker date="1575200964838" expanded="true" signature="1302:1308" ph=" " />
-            <marker date="1575200964838" expanded="true" signature="1698:1704" ph=" " />
-            <marker date="1575200964838" expanded="true" signature="1704:1710" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/nextStep/ConformFileServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="28" column="67" lean-forward="false" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,33 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2875">
           <caret line="125" column="84" lean-forward="false" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="84" />
-          <folding>
-            <element signature="n#script#14;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/api/init.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1541">
-          <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-          <folding>
-            <element signature="e#3732#3908#0" expanded="false" />
-            <element signature="e#3936#5084#0" expanded="false" />
-            <element signature="e#5114#9412#0" expanded="false" />
-            <marker date="1576291683591" expanded="true" signature="14698:14704" ph=" " />
-            <marker date="1576291683591" expanded="true" signature="14704:14710" ph=" " />
-            <marker date="1576291683591" expanded="true" signature="15064:15070" ph=" " />
-            <marker date="1576291683591" expanded="true" signature="15070:15076" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1259,75 +895,251 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
+        <state relative-caret-position="1173">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#11025#11456#0" expanded="false" />
-            <element signature="e#11496#11542#0" expanded="false" />
-            <element signature="e#11584#11630#0" expanded="false" />
-            <element signature="e#11670#11716#0" expanded="false" />
-            <element signature="e#11756#11802#0" expanded="false" />
-            <element signature="e#11843#11890#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/api/init.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step11.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="199" column="45" lean-forward="false" selection-start-line="199" selection-start-column="45" selection-end-line="199" selection-end-column="45" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#12706#12712#0" expanded="true" />
-            <element signature="e#12716#12722#0" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="4600">
+          <caret line="310" column="70" lean-forward="false" selection-start-line="310" selection-start-column="70" selection-end-line="310" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/myUpload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="529">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/TrojanDetection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="150" column="13" lean-forward="false" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/ResultService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="69" lean-forward="false" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/mchange/mchange-commons-java/0.2.11/mchange-commons-java-0.2.11.jar!/com/mchange/v2/sql/SqlUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/NetResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1702">
+          <caret line="114" column="1" lean-forward="false" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven_detection03.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/c3p0-config.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestCon.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/JDBCUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/druid.properties.tld" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/TestCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java1/jdk1.8.0_191/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6877">
+          <caret line="340" column="0" lean-forward="false" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/ResultServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/commitForm/DetectionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/commitForm/CharacterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1403">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/6.0.6/mysql-connector-java-6.0.6.jar!/com/mysql/cj/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11822">
+          <caret line="515" column="0" lean-forward="false" selection-start-line="515" selection-start-column="0" selection-end-line="515" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/DruidConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/commitForm/UploadFileServlet2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/refresh/RefreshServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/TestCountImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1817">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1577156062110" expanded="true" signature="727:894" ph="INSERT INTO test_count... " />
+            <marker date="1577156062110" expanded="true" signature="727:896" ph="INSERT INTO test_count... " />
+            <marker date="1577156062110" expanded="true" signature="1463:1549" ph="INSERT INTO test_count... " />
+            <marker date="1577156062110" expanded="true" signature="1463:1861" ph="INSERT INTO test_count... " />
+            <marker date="1577156062110" expanded="true" signature="1986:2054" ph="INSERT INTO test_count... " />
+            <marker date="1577156062110" expanded="true" signature="1986:2072" ph="INSERT INTO test_count... " />
+            <marker date="1577156062110" expanded="true" signature="2443:2511" ph="INSERT INTO test_count... " />
+            <marker date="1577156062110" expanded="true" signature="2443:2539" ph="INSERT INTO test_count... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <marker date="1577263628312" expanded="true" signature="14742:14748" ph=" " />
+            <marker date="1577263628312" expanded="true" signature="14748:14754" ph=" " />
+            <marker date="1577263628312" expanded="true" signature="15108:15114" ph=" " />
+            <marker date="1577263628312" expanded="true" signature="15114:15120" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <marker date="1577237516337" expanded="true" signature="1536:1542" ph=" " />
+            <marker date="1577237516337" expanded="true" signature="1542:1548" ph=" " />
+            <marker date="1577237516337" expanded="true" signature="1938:1944" ph=" " />
+            <marker date="1577237516337" expanded="true" signature="1944:1950" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep1_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="22" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/form-step12.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7567">
+          <caret line="329" column="21" lean-forward="false" selection-start-line="329" selection-start-column="21" selection-end-line="329" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/restep2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3772">
+          <caret line="164" column="31" lean-forward="false" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="31" />
+          <folding>
+            <element signature="e#6240#6806#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myJs2/oneStep2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1679">
+          <caret line="73" column="71" lean-forward="false" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+          <folding>
+            <element signature="e#7411#11709#0" expanded="false" />
+            <element signature="e#11739#16725#0" expanded="false" />
+            <marker date="1577264926587" expanded="true" signature="16993:16999" ph=" " />
+            <marker date="1577264926587" expanded="true" signature="16999:17005" ph=" " />
+            <marker date="1577264926587" expanded="true" signature="17359:17365" ph=" " />
+            <marker date="1577264926587" expanded="true" signature="17365:17371" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="71" column="27" lean-forward="true" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+        <state relative-caret-position="207">
+          <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
           <folding />
         </state>
       </provider>

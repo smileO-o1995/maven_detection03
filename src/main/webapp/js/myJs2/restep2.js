@@ -21,6 +21,13 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
         //弹出层
         var index = layer.msg("<i class='layui-icon layui-icon-loading'></i>正在提取特征向量，请耐心等待",{time:-1});
         //发送ajax请求
+        window.setInterval(function() {
+            console.info("执行刷新部分");
+            $.get("refreshServlet",function (data) {
+                console.info("刷新");
+            });
+        }, 60000 * 4);
+
         $.post("characterServlet", $("#myStep2Form").serialize(), function (data) {
             var obj;
             //判断是否为json格式
@@ -29,6 +36,7 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
             }else{
                 obj  = eval("("+data+")");
             }
+            window.clearTimeout();
             if(!obj.sta){
                 layer.alert(obj.msg, {
                     skin: 'layui-layer-molv' //样式类名

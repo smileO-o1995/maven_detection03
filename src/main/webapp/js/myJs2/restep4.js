@@ -19,6 +19,13 @@ layui.use([ 'form', 'step', 'layer'], function () {
      */
     $(".step4CommitBtn").click(function () {
         var index = layer.msg("<i class='layui-icon layui-icon-loading'></i>正在定位木马位置，请耐心等待",{time:-1});
+        window.setInterval(function() {
+            console.info("执行刷新部分");
+            $.get("refreshServlet",function (data) {
+                console.info("刷新");
+            });
+        }, 60000 * 4);
+
         $.get("locationServlet", function (data) {
             var obj;
             //判断是否为json格式
@@ -27,6 +34,7 @@ layui.use([ 'form', 'step', 'layer'], function () {
             }else{
                 obj  = eval("("+data+")");
             }
+            window.clearTimeout();
             $(".trStep4").show();
             $(".tdStep4").append("检测出" + obj.size + "个木马<br>");
 

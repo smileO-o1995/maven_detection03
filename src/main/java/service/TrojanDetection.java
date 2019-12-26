@@ -4,6 +4,7 @@ import domain.NetInfo;
 
 import java.util.*;
 
+import domain.NetResult;
 import kMeansUtil.Cluster;
 import kMeansUtil.KMeansRun;
 import kMeansUtil.Point;
@@ -129,22 +130,31 @@ public class TrojanDetection {
 //            }
         }
 
+        NetResult netResult = new NetResult();
+
         //6、首先定性判断检测是否正确 有——无， 有——有， 无——有，无——无
         if(originTrojan == 0){//无——
+            netResult.setTrojanType(false);
             if(trojanNetData.size() != 0){
                 //无——有
                 map.put("stat", false);
                 map.put("msg", "检测错误，该无木马网表被检测为木马网表");
+                netResult.setRstState(false);
 
             }else{
                 map.put("stat",true);
                 map.put("normal",true);
                 map.put("msg", "检测正确，该网表被判断为无木马网表");
+                netResult.setRstState(true);
+                netResult.setNormal(true);
+
             }
         }else{//有
+            netResult.setTrojanType(true);
             if(successNum == 0){
                 map.put("stat", false);
                 map.put("msg","检测错误，该有木马网表被检测为无木马网表");
+                netResult.setRstState(false);
 
             }else {
                 map.put("stat", true);
@@ -157,6 +167,11 @@ public class TrojanDetection {
                 String errorRate = CaculateUtil.myPercent(errorNet.size(), netInfos.size());
                 map.put("successRate", successRate);
                 map.put("errorRate", errorRate);
+
+                netResult.setRstState(true);
+                netResult.setNormal(false);
+                netResult.setDetectionRate(successRate);
+                netResult.setFalseAlarmRate(errorRate);
             }
         }
 
@@ -168,6 +183,7 @@ public class TrojanDetection {
         map.put("sets", sets);
         map.put("netSet", netSet);
         map.put("netSet2",netSet2);
+        map.put("netResult", netResult);
 
         return map;
     }
