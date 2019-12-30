@@ -212,8 +212,9 @@
 
                         <div id="myStep5" style="display: none; align-content: left">
                             <div class="layui-btn-group">
-                                <button class="layui-btn refreshBtn1" type="button">重新开始步骤条检测</button>
-                                <button class="layui-btn refreshBtn2" type="button">重新开始一站式检测</button>
+                                <!--<button class="layui-btn refreshBtn1" type="button">重新开始步骤条检测</button>-->
+                                <!--<button class="layui-btn refreshBtn2" type="button">重新开始一站式检测</button>-->
+                                <button class="layui-btn refreshBtn" type="button">重新开始检测</button>
                                 <button class="layui-btn saveRst" type="button">保存数据</button>
                                 <button class="layui-btn countRst" type="button">查看统计数据</button>
                             </div>
@@ -374,17 +375,17 @@
             step.next('#stepForm');
         });
 
-        //1、点击“重新开始步骤条检测”
-        $(".refreshBtn1").click(function () {
-            location.reload();
-        });
-
-        //2、点击“重新开始一站式检测”
-        $(".refreshBtn2").click(function () {
-            $("#mode1").hide();
-            $("#mode2").show();
-            $(".rstCardJs").hide();
-        });
+        // //1、点击“重新开始步骤条检测”
+        // $(".refreshBtn1").click(function () {
+        //     location.reload();
+        // });
+        //
+        // //2、点击“重新开始一站式检测”
+        // $(".refreshBtn2").click(function () {
+        //     $("#mode1").hide();
+        //     $("#mode2").show();
+        //     $(".rstCardJs").hide();
+        // });
 
         //3、点击“查看数据”
         $(".countRst").click(function () {
@@ -398,6 +399,30 @@
                 content: 'table.html'
             });
             // location.href("table.html");
+        });
+
+        //1、页面刷新
+        $(".refreshBtn").click(function () {
+            location.reload();
+        });
+
+        $(function () {
+            var fileName = $(".netTitleJs").html();
+            console.info(fileName);
+            var index = layer.confirm('请选择一站式检测方式或步骤条检测方式', {
+                btn: ['一站式检测方式','步骤条检测方式'] //按钮
+            }, function(){
+                var fileName = $(".netTitleJs").html();
+                console.info(fileName);
+                $("#mode1").hide();
+                $("#mode2").show();
+                layer.close(index);
+            }, function(){
+                var fileName = $(".netTitleJs").html();
+                console.info(fileName);
+                layer.close(index);
+            });
+
         });
 
     });

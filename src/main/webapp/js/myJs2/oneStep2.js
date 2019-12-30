@@ -51,7 +51,13 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
                                     $(".netTitleJs").html(fileName);
                                     $(".rstCardJs").show();
                                     var index = layer.msg("<i class='layui-icon layui-icon-loading'></i>正在努力检测中，请耐心等待",{time:-1});
-                                    var iCount = setInterval(refresh(), 60000 * 4);
+
+                                    var iCount = setInterval(
+                                        function () {
+                                            $.get("refreshServlet",function (data) {
+                                            console.info("刷新");
+                                        });
+                                    }, 180000);
 
                                     //1、格式化网表
                                     $.get("formatServlet", function(data3) {
@@ -141,6 +147,7 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
         var netLength = trojanNetSet.length - 1;
         var trojanPayLoad = obj3.trojanPayLoad;
         var payLoadLength = trojanPayLoad.length - 1;
+
         if(netLength >= 0){
             $(".trStep1_2").show();//显示测试结果栏
             $(".netType").html("被木马感染");
@@ -165,6 +172,11 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
         }else{//为无木马网表
             $(".trStep1_2").show();//显示测试结果栏
             $(".netType").html("无木马");
+            $(".trStep1_2_1").show();
+            $(".tdStep1_2_1").html("");
+            $(".trStep1_2_2").show();
+            $(".tdStep1_2_2").html("");
+
         }
     }
 
@@ -403,18 +415,27 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
                 myChart1.setOption(option1, true);
             }
 
-            $(".trStep3_1").show();
+            $(".trStep3_1").show();//木马检测类型
             $(".tdStep3_1").html(resData.msg);
+            $(".trStep3_2").show();
             console.info(resData.msg);
             //判断是否定性检查正确
             if(!resData.stat){//定性检查错误
                 $(".noteStep3").html("error");
+                $(".tdStep3_2").html("");
+                $(".trStep4").hide();
+                $(".trStep3_3").hide();
+                $(".trStep3_4").hide();
             }else{//定性检查正确
                 //网表是否为木马网表
                 if(resData.normal){//为普通网表
                     $(".noteStep3").html("right");
+                    $(".tdStep3_2").html("");
+                    $(".trStep4").hide();
+                    $(".trStep3_3").hide();
+                    $(".trStep3_4").hide();
                 }else{
-                    $(".trStep3_2").show();
+
                     $(".trStep3_3").show();
                     $(".trStep3_4").show();
                     var netSet = resData.netSet;

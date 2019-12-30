@@ -21,10 +21,12 @@
         <div class="layui-card">
             <div class="layui-card-header"><i class="fa fa-bar-chart icon">统计表格</i></div>
             <div class="layui-card-body">
-                <table class="layui-hide" id="currentTableId" lay-filter="currentTableFilter"></table>
-
                 <p class="rst count"></p>
                 <hr style="margin-top: 15px">
+
+                <table class="layui-hide" id="currentTableId" lay-filter="currentTableFilter"></table>
+
+
             </div>
         </div>
 
@@ -42,9 +44,10 @@
             height:350,
             url: 'showTestCountServlet',
             // page: true,//开启分页
+
             cols: [[
                 {type: "checkbox", fixed: "left"},
-                {field: 'id', title:'id', hide:true},
+                {field: 'id', title:'id', hide:true, sort:true},
                 {field: 'netlistName', title: '网表'},
                 {field: 'trojanType', title: '是否被木马入侵'},
                 {field: 'method', title: '检测方式'},
@@ -53,6 +56,10 @@
                 {field: 'falseAlarmRate', title: '虚警率'},
                 {field: 'rstState',  title: '类型判定是否正确'}
             ]],
+            initSort:{
+                field:"id",
+                type:'desc'
+            },
             done: function (res,curr,count) {
                 exportData = res.data;
                 console.info(exportData);
