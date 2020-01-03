@@ -36,7 +36,7 @@ public class ReConstruction {
             4、为当前木马模块创建一个内部容器
             */
             List<String> inNets = new ArrayList<>(); //存放当前模块的cell
-            ArrayList<String> inInjects = new ArrayList<>(); //激励模块
+            ArrayList<String> inInjects = new ArrayList<>(); //感染源信号
             ArrayList<String> inTrojans = new ArrayList<>();//存放当前模块的可疑信号
             HashSet<String> outputAll = new HashSet<>();
 
@@ -82,7 +82,7 @@ public class ReConstruction {
 
                /*
                14、判断input和output中的元素是否在list_copy中，如果存在，则将其加入curQueue中，并将元素从list_copy中删除
-               同时，判断output是否在suSet中，如果不在那么它将是木马激励电路的输出端口
+               同时，(判断output是否在suSet中，如果不在那么它将是木马激励电路的输出端口:未实现)
                 */
                myUtil.addToCurQueue(inputs, outputs, susSet_copy, curQueue);
            }
@@ -118,6 +118,7 @@ public class ReConstruction {
        rstData.put("size",susTrojanNets.size());//发现的木马个数
        rstData.put("trojans", trojans);//ArrayList<ArrayList<String>>的结构，trojan[i]:表示第i个模块中的木马节点名称
        rstData.put("susTrojanNets",susTrojanNets);//ArrayList<ArrayList<String>>的结构,susTrojanNets[i]:表示第i个模块中感染模块
+       rstData.put("injectedCell", injectedCell);//感染电路的结构
 
        //16、查看susTrojanNets的大小，可以找到木马模块的个数
        System.out.println("  可疑模块的个数：" + susTrojanNets.size());

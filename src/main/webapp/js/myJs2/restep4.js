@@ -35,27 +35,39 @@ layui.use([ 'form', 'step', 'layer'], function () {
                 obj  = eval("("+data+")");
             }
             window.clearTimeout();
-            $(".trStep4").show();
-            $(".tdStep4").append("检测出" + obj.size + "个木马<br>");
+            $(".trStep4_1").show();
+            $(".trStep4_2").show();
+
+            $(".tdStep4_1").html("");
+            $(".tdStep4_2").html("");
+
 
             if(obj.size == 1){
+                //暂时只讨论一个木马的情况
                 var str = '';
+                var str2 = '';
                 for(var i = 0; i < obj.susTrojanNets[0].length; i++){
                     str = str + '&emsp;&emsp;' + obj.susTrojanNets[0][i]+ '<br>';
                 }
-                $(".tdStep4").append(str);
+                for(var i = 0; i < obj.injectedCell[0].length; i++){
+                    str2 = str2 + '&emsp;&emsp;' + obj.injectedCell[0][i]+ '<br>';
+                }
+
+                $(".tdStep4_1").append(str);
+                $(".tdStep4_2").append(str2);
             }else{
+                $(".tdStep4_1").append("检测出" + obj.size + "个木马<br>");
                 var text;
                 for(var i = 0; i < obj.size; i++){
                     var rstData = obj.susTrojanNets[i];
-                    var str;
+                    var str = '';
                     for(var j = 0; j < obj.susTrojanNets[i].length; j++){
                         str = str + '&emsp;&emsp;' + obj.susTrojanNets[i][j] + '<br>';
                     }
                     text = '<p>' + "第"+ (i+1) + "个</p>" +
                         '<div >'+ str +'</div>'
                 }
-                $(".tdStep4").append(text);
+                $(".tdStep4_1").append(text);
             }
             //关闭等待提示框
             layer.close(index);

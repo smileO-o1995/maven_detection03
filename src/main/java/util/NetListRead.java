@@ -237,9 +237,12 @@ public class NetListRead {
 		}else if (preName.contains("RS232-T1100")){
 			tjTrigger = Pattern.compile("U29[3-9]|U30[0-2]|iDatasend_reg_2").matcher(cellName);
 			tjPayload = Pattern.compile("U305").matcher(cellName);
-		}else if(preName.contains("EthernetMAC10GE") || preName.contains("b19_T200") || preName.contains("s15850")
-				|| preName.contains("wb_conmax") || preName.contains("vga_enh") || preName.contains("s35932")){
+		}else if(preName.contains("EthernetMAC10GE") || preName.contains("b19_T200")
+				|| preName.contains("wb_conmax") || preName.contains("vga_enh") || preName.contains("s35932")) {
 			tjTrigger = Pattern.compile("Trojan|Counter_BIT1|INV_test_se|Trigger").matcher(cellName);
+			index = cellName.indexOf("Payload");
+		}else if(preName.contains("s15850")){
+			tjTrigger = Pattern.compile("Tg1|Tg2|INV_test_se|Trojan_Trigger").matcher(cellName);
 			index = cellName.indexOf("Payload");
 		}else if(preName.contains("s38584_T100") || preName.contains("s38584_T200")){
 			tjTrigger = Pattern.compile("Trojan").matcher(cellName);
