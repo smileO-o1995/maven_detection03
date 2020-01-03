@@ -11,10 +11,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.filechooser.FileSystemView;
-
 public class ColModule {
 
 	// 链表referModule用于存储每个module中的内容；每个子元素表示一个完整的verilog语句
@@ -28,7 +24,8 @@ public class ColModule {
 	 * 	该函数的作用是将文件中的内容重新整合，使该程序不仅适用于单个moduel的情况，也适用于多个moduel的情况
 	 * 	处理后的到一个新的文件，该文件中去掉了空格
 	 * 	且每个完整的语句适用一行数据表示，而结尾的分号则已经去掉
-	 *
+	 *	moduleName对应每个module的名称
+	 *	refModule对应每个module中的语句
 	 * @param file
 	 * @throws IOException
 	 */
@@ -38,7 +35,11 @@ public class ColModule {
 		BufferedReader bReader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
 
 
-		// 读取文件
+		/*读取文件
+		（1）去掉特殊字符，除空格外
+		（2）去除注释
+		（3）一个content表示逻辑门实例语句
+		 */
 		String line1; // 该容器存储每次读取（读取一行）的数据
 		String content = ""; // 该容器用于存储每一个完整的语句（使用“;”作为隔离）
 		int endLabel = -1; // 用于标记content中是否出现语句结束标志
@@ -47,7 +48,7 @@ public class ColModule {
 			String line = line1.trim(); // 去掉首尾的空格符
 			Pattern pattern = Pattern.compile("\\t|\\r|\\n"); // 暂时保留空格符，去掉其他特殊转义字符
 			Matcher matcher = pattern.matcher(line);
-			String dest = matcher.replaceAll("");
+			String dest = matcher.replaceAll("");//dest为该行数据去掉其他特殊字符后得到的字符串
 
 			int note = dest.indexOf("//");
 			// 读到注释行时，清空注释符以及注释符以后的数据

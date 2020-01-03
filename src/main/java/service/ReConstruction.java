@@ -27,6 +27,7 @@ public class ReConstruction {
        List<List<String>> susTrojanNets = new ArrayList<>();
        ArrayList<ArrayList<String>> injects = new ArrayList<>();
        ArrayList<ArrayList<String>> trojans = new ArrayList<>();
+       ArrayList<ArrayList<String>> starts = new ArrayList<>();
 
        /*
        3、当susSet_copy不为空的时候，查找每个节点对应的逻辑器件实例块
@@ -39,6 +40,7 @@ public class ReConstruction {
             ArrayList<String> inInjects = new ArrayList<>(); //感染源信号
             ArrayList<String> inTrojans = new ArrayList<>();//存放当前模块的可疑信号
             HashSet<String> outputAll = new HashSet<>();
+            ArrayList<String> startList = new ArrayList<>();//开始的木马节点
 
             /*
             5、从suSet集合中取出又放回suSet集合中，使用marked数组实现，然后将取到的点放到curQueue队列中
@@ -63,6 +65,11 @@ public class ReConstruction {
                10、求net元素的输入节点集合inputs
                 */
                HashMap<Integer, String> inputs = myUtil.inputList(netIndex, oListDG.vertexNodeList);
+
+               /*
+               查看input集合中的元素是否都在suSet，如果都不在，则将对应的net节点保存到startList中
+                */
+               myUtil.getStartList(inputs, netIndex, suSet, startList, oListDG.vertexNodeList);
 
                /*
                11、求net元素的输出节点集合outputs
@@ -98,6 +105,7 @@ public class ReConstruction {
            susTrojanNets.add(new ArrayList<>(inNets));
            injects.add(new ArrayList<>(inInjects));
            trojans.add(new ArrayList<>(inTrojans));
+           starts.add(new ArrayList<>(startList));
        }
 
        /**
@@ -119,6 +127,7 @@ public class ReConstruction {
        rstData.put("trojans", trojans);//ArrayList<ArrayList<String>>的结构，trojan[i]:表示第i个模块中的木马节点名称
        rstData.put("susTrojanNets",susTrojanNets);//ArrayList<ArrayList<String>>的结构,susTrojanNets[i]:表示第i个模块中感染模块
        rstData.put("injectedCell", injectedCell);//感染电路的结构
+       rstData.put("starts", starts);//起始的木马触发点
 
        //16、查看susTrojanNets的大小，可以找到木马模块的个数
        System.out.println("  可疑模块的个数：" + susTrojanNets.size());
@@ -143,6 +152,11 @@ public class ReConstruction {
            System.out.println("  可疑模块" + (i+1) + " ——感染模块:");
            for (int j = 0; j < injectedCell.get(i).size(); j++) {
                System.out.println(injectedCell.get(i).get(j));
+           }
+           System.out.println();
+           System.out.println("  起始的木马激励信号");
+           for (int j = 0; j < starts.get(i).size(); j++) {
+               System.out.println(starts.get(i).get(j));
            }
            System.out.println();
        }

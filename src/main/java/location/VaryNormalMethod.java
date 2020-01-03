@@ -170,6 +170,38 @@ public class VaryNormalMethod {
     }
 
     /**
+     *
+     * @param inputs:net的输入集合，一个map对象，key为索引值，value为.IN2(iXMIT_state_1_temp)的类型
+     * @param netIndex:net的索引号
+     * @param suSet:信号集合，每个字符串样式为iXMIT_N_CTRL_2__28，其中“_28表示索引号”
+     * @param startList：如何inputs中的所有元素都不在suSet中，则将net元素添加到startList中
+     * @param vertexNodeList :十字链表结构
+     */
+    public void getStartList(HashMap<Integer, String> inputs,int netIndex,ArrayList<String> suSet, ArrayList<String> startList, VertexNode[] vertexNodeList){
+        int count = 0;
+        int len = inputs.size();
+        System.out.println("----------------------");
+        for(int index : inputs.keySet()){
+            String str = inputs.get(index);
+            str = str.substring(str.indexOf("(")+1, str.indexOf(")"));
+            System.out.println(str);
+            for(String str2 : suSet){
+                String str3 = str2.substring(0,str2.lastIndexOf("_"));
+                System.out.println(str3);
+                if(str.equals(str3)){
+                    count++;
+                    break;
+                }
+
+            }
+            System.out.println("----------------------");
+        }
+        if(count == 0){
+            startList.add(vertexNodeList[netIndex].vertex);
+        }
+    }
+
+    /**
      * 进行广度优先遍历BFS
      */
     private ArrayList<String> BFS(ArrayList<Integer> injects, VertexNode[] vertexNodeList) {
