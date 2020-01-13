@@ -57,19 +57,27 @@ public class LocationServlet extends HttpServlet {
 
         /*
         3、设置修改原网表，消除木马的触发条件
+        参数：
+        （1）starts: ArrayList<ArrayList<String>>木马触发电路起始节点
         （1）将starts中的节点与netInfos中的木马节点一一对应，得到ArrayList<NetInfo> startInfos
         （2）将starts中的节点可能出现的几种输出情况标记出来
         （3）读取源.v文件，对比每一个逻辑单元，然后替换掉，写入新的文件中
          */
-        ArrayList<String> starts = (ArrayList<String>)rstData.get("starts");
+//        ArrayList<ArrayList<String>> starts = (ArrayList<ArrayList<String>>)rstData.get("starts");
         ReverseNetList reverseNetList = new ReverseNetList();
-        ArrayList<NetInfo> startInfos = reverseNetList.correspondInfos(starts, netInfos);
-        ArrayList<String[]> startOutType = reverseNetList.findOutType(starts);
-        try{
-            reverseNetList.reverseFile(fileName, savePath, startInfos, startOutType);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+        reverseNetList.recover(rstData,netInfos);
+
+
+//        ArrayList<ArrayList<NetInfo>> startInfos = reverseNetList.correspondInfos(starts, netInfos);
+
+//        ArrayList<ArrayList<String[]>> startOutTypes = reverseNetList.findOutType(starts);
+
+//        try{
+//            String reverseFileName = reverseNetList.reverseFile(fileName, savePath, startInfos, startOutTypes);
+//            session.setAttribute("reverseFileName", reverseFileName);
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
 
         /*
         4、设置返回的数据

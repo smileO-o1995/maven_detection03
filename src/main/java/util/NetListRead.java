@@ -103,7 +103,17 @@ public class NetListRead {
 
 		Pattern p1 = Pattern.compile("\\s");
 		String[] dest = p1.split(content);
-		System.out.println(content);
+		//***测试运行位置的代码
+//		System.out.println("------每条语句-------");
+//		for(int i = 0; i < dest.length; i++){
+//			System.out.println(dest[i]);
+//		}
+		/*
+		dest数组的样式：
+		dest[1]: AND2X4
+		dest[2]: U303(.IN1(iCTRL),.IN2(xmit_doneH_temp),.Q(xmit_doneH))
+		 */
+//		System.out.println(content);
 //		System.out.println(dest[0]);
 
 		// 以下对每句逻辑语句进行分类处理
@@ -136,6 +146,8 @@ public class NetListRead {
 					vertexInfo.get(verLen).add("null");
 					vertexInfo.get(verLen).add("null");
 					vertexInfo.get(verLen).add("constant");
+					//gateName
+					vertexInfo.get(verLen).add("null");
 				}
 			}
 			if (dest[1].indexOf("state_at_1") != -1) {
@@ -150,6 +162,8 @@ public class NetListRead {
 					vertexInfo.get(verLen).add("null");
 					vertexInfo.get(verLen).add("null");
 					vertexInfo.get(verLen).add("constant");
+					//gateName
+					vertexInfo.get(verLen).add("null");
 				}
 			}
 
@@ -176,6 +190,8 @@ public class NetListRead {
 		// 1)首先需要获取逻辑门的器件类型名称
 		// SDFFX1 DFF_603_Q_reg(.D(g27257),.SI(g996),.SE(test_se),.CLK(CK),.Q(g1041),.QN());
 		String cellName = content.substring(0, content.indexOf("("));
+//		//***测试运行位置的代码
+//		System.out.println("------cellName-------:" + cellName);
 
 		// 2)创建输入输出列表
 		List<String> tailvex = new ArrayList<>(); // 输入节点列表
@@ -346,6 +362,7 @@ public class NetListRead {
 			}else {
 				vertexInfo.get(verLen).add("noTrojan");
 			}
+			vertexInfo.get(verLen).add(cellName);
 
 			//存入边表中
 			for (String string2 : tailvex) {
@@ -392,6 +409,8 @@ public class NetListRead {
 		}else{
 			vertexInfo.get(verLen).add("noTrojan");
 		}
+		//gateName
+		vertexInfo.get(verLen).add("assign");
 
 		// 将逻辑门的输入输出记录至边信息表edgesInfo中
 		int edgeLen = edgesInfo.size();
@@ -460,6 +479,8 @@ public class NetListRead {
 				vertexInfo.get(vertexLen).add("null");
 				vertexInfo.get(vertexLen).add("null");
 				vertexInfo.get(vertexLen).add("inputPin");
+				//gateName
+				vertexInfo.get(vertexLen).add("null");
 			}
 
 		}else {
@@ -486,6 +507,8 @@ public class NetListRead {
 				vertexInfo.get(vertexLen).add("null");
 				vertexInfo.get(vertexLen).add("null");
 				vertexInfo.get(vertexLen).add("inputPin");
+				//gateName
+				vertexInfo.get(vertexLen).add("null");
 			}
 		}
 	}

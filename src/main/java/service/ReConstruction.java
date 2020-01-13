@@ -24,11 +24,16 @@ public class ReConstruction {
        使用双层list，同一模块网表的感染源放在一起injects
        使用双层list，同一模块的可疑信号放在一块
         */
-       List<List<String>> susTrojanNets = new ArrayList<>();
        ArrayList<ArrayList<String>> injects = new ArrayList<>();
        ArrayList<ArrayList<String>> trojans = new ArrayList<>();
        ArrayList<ArrayList<String>> starts = new ArrayList<>();
 
+       /* 重新定义
+        1、trojanCells：木马触发单元
+        2、injectCells: 木马感染单元
+        */
+       ArrayList<HashMap<String, String>> trojanCells = new ArrayList<>();
+       ArrayList<HashMap<String, String>> injectCells = new ArrayList<>();
        /*
        3、当susSet_copy不为空的时候，查找每个节点对应的逻辑器件实例块
         */
@@ -36,12 +41,11 @@ public class ReConstruction {
             /*
             4、为当前木马模块创建一个内部容器
             */
-            List<String> inNets = new ArrayList<>(); //存放当前模块的cell
-            ArrayList<String> inInjects = new ArrayList<>(); //感染源信号
-            ArrayList<String> inTrojans = new ArrayList<>();//存放当前模块的可疑信号
+            ArrayList<String> inInjects = new ArrayList<>(); //感染源信号injects
+            ArrayList<String> inTrojans = new ArrayList<>();//存放当前模块的可疑信号trojans
             HashSet<String> outputAll = new HashSet<>();
             ArrayList<String> startList = new ArrayList<>();//开始的木马节点
-
+            HashMap<String, String> trojanCell = new HashMap<>();//木马感染电路
             /*
             5、从suSet集合中取出又放回suSet集合中，使用marked数组实现，然后将取到的点放到curQueue队列中
              */
@@ -83,9 +87,9 @@ public class ReConstruction {
                System.out.println(cell_net);
 
                /*
-               13、将cell_net保存到inNets容器中
+               13、将cell_net保存到trojanCell容器中
                 */
-               inNets.add(cell_net);
+               trojanCell.put(net, cell_net);
 
                /*
                14、判断input和output中的元素是否在list_copy中，如果存在，则将其加入curQueue中，并将元素从list_copy中删除
@@ -102,20 +106,19 @@ public class ReConstruction {
            /*
            16、将感染源和感染模块加入外部容器中
             */
-           susTrojanNets.add(new ArrayList<>(inNets));
            injects.add(new ArrayList<>(inInjects));
            trojans.add(new ArrayList<>(inTrojans));
            starts.add(new ArrayList<>(startList));
+           trojanCells.add(trojanCell);
        }
 
        /**
         * 下面需要通过，广度优先遍历将木马感染的逻辑门器件找出来，
         * 将感染的木马用写入文件中
         */
-       ArrayList<ArrayList<String>> injectedCell = new ArrayList<>();
        for (ArrayList<String> arrayList : injects) {
-           ArrayList<String> inject = myUtil.reConstructionInfected(arrayList,oListDG.vertexNodeList);
-           injectedCell.add(new ArrayList<>(inject));
+           HashMap<String, String> inject = myUtil.reConstructionInfected(arrayList,oListDG.vertexNodeList);
+           injectCells.add(new HashMap<>(inject));
        }
 
        /**
@@ -123,44 +126,11 @@ public class ReConstruction {
         * 以及可疑信号列表suSet（元素格式为：iXMIT_N_CTRL_2__28）
         */
        Map<String, Object> rstData = new HashMap<>();
-       rstData.put("size",susTrojanNets.size());//发现的木马个数
+       rstData.put("size",trojans.size());//发现的木马个数
        rstData.put("trojans", trojans);//ArrayList<ArrayList<String>>的结构，trojan[i]:表示第i个模块中的木马节点名称
-       rstData.put("susTrojanNets",susTrojanNets);//ArrayList<ArrayList<String>>的结构,susTrojanNets[i]:表示第i个模块中感染模块
-       rstData.put("injectedCell", injectedCell);//感染电路的结构
+       rstData.put("trojanCells",trojanCells);//木马触发单元
+       rstData.put("injectCells", injectCells);//木马感染单元
        rstData.put("starts", starts);//起始的木马触发点
-
-       //16、查看susTrojanNets的大小，可以找到木马模块的个数
-       System.out.println("  可疑模块的个数：" + susTrojanNets.size());
-
-       for (int i = 0; i < susTrojanNets.size(); i++) {
-           System.out.println("  可疑模块" + (i+1) + " ——可疑信号:");
-           for (int j = 0; j < trojans.get(i).size(); j++) {
-               String string = trojans.get(i).get(j);
-               System.out.print(myUtil.findStr(string) + ",");
-           }
-           System.out.println();
-           System.out.println("  可疑模块" + (i+1) + " ——可疑模块:");
-           for (int j = 0; j < susTrojanNets.get(i).size(); j++) {
-               System.out.println(susTrojanNets.get(i).get(j));
-           }
-           System.out.println("  可疑模块" + (i+1) + " ——感染源:");
-           for (int j = 0; j < injects.get(i).size(); j++) {
-               String string = injects.get(i).get(j);
-               System.out.print(myUtil.findStr(string) + ",");
-           }
-           System.out.println();
-           System.out.println("  可疑模块" + (i+1) + " ——感染模块:");
-           for (int j = 0; j < injectedCell.get(i).size(); j++) {
-               System.out.println(injectedCell.get(i).get(j));
-           }
-           System.out.println();
-           System.out.println("  起始的木马激励信号");
-           for (int j = 0; j < starts.get(i).size(); j++) {
-               System.out.println(starts.get(i).get(j));
-           }
-           System.out.println();
-       }
-       System.out.println();
 
        return rstData;
    }

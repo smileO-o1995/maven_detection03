@@ -15,7 +15,15 @@ public class NetInfo {
     String type;
     boolean comform;//如果CC0与CC1是否为0 或者CO是否为-1，则需要将comform设定为true，表示提前将该节点设定为木马可疑节点
     //同时，需要改变CC0/CC1/CO的值，让其在第三限位。
+    String gateName;//记录输出节点逻辑单元的名称
 
+    public boolean isComform() {
+        return comform;
+    }
+
+    public void setGateName(String gateName) {
+        this.gateName = gateName;
+    }
 
     public int getVerId() {
         return verId;

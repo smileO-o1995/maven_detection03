@@ -33,6 +33,7 @@ public class OListDG {
             vertexNodeList[i].verType = vexs.get(i).get(2); //节点在所对应逻辑门中的名称
             vertexNodeList[i].firstIn = null; //该节点作为 箭头的终点 即输出端口
             vertexNodeList[i].firstOut = null; //该节点作为 箭头的出发点 即输入端口
+            vertexNodeList[i].gateName = vexs.get(i).get(4);//节点对应逻辑门的名称
         }
 
     }

@@ -43,6 +43,9 @@ public class OListDG {
             vertexNodeList[i].firstIn = null; //该节点作为 箭头的终点 即输出端口
             vertexNodeList[i].firstOut = null; //该节点作为 箭头的出发点 即输入端口
             vertexNodeList[i].trojanType = vexs.get(i).get(3);
+            vertexNodeList[i].gateName = vexs.get(i).get(4);
+//            //***测试运行位置的代码
+//            System.out.println("gateName : " + vertexNodeList[i].gateName);
         }
 
     }
@@ -109,6 +112,7 @@ public class OListDG {
         int ffo;
         int pi;
         int po;
+        String gateName;
     }
 
     /*	1、
@@ -885,6 +889,7 @@ public class OListDG {
             int CC1 = vertexNode.CC1;
             int CO = vertexNode.CO;
             String trojanType = vertexNode.trojanType;
+            String gateName = vertexNode.gateName;
 
             //拼接存储数据
             String linkContent =vertex + "_" + i + "," + CC0 + "," + CC1 + "," + CO + "," + trojanType;
@@ -897,6 +902,7 @@ public class OListDG {
             netInfo.setCC1(CC1);
             netInfo.setCO(CO);
             netInfo.setType(trojanType);
+            netInfo.setGateName(gateName);
             /*
             计算netInfo中的CC值
             double CC;//在计算CC值的时候需要判断CC0与CC1是否为0 或者CO是否为-1

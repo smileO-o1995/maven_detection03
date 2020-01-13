@@ -469,23 +469,24 @@ layui.use([ 'form', 'echarts', 'step', 'layer'], function () {
             //暂时只讨论一个木马的情况
             var str = '';
             var str2 = '';
-            for(var i = 0; i < obj.susTrojanNets[0].length; i++){
-                str = str + '&emsp;&emsp;' + obj.susTrojanNets[0][i]+ '<br>';
+            for(var key in obj.trojanCells[0]){
+
+                str = str + '&emsp;&emsp;' + obj.trojanCells[0][key]+ '<br>';
             }
-            for(var i = 0; i < obj.injectedCell[0].length; i++){
-                str2 = str2 + '&emsp;&emsp;' + obj.injectedCell[0][i]+ '<br>';
+            for(var key in obj.injectCells[0]){
+                str2 = str2 + '&emsp;&emsp;' + obj.injectCells[0][key]+ '<br>';
             }
 
             $(".tdStep4_1").append(str);
             $(".tdStep4_2").append(str2);
         }else{
-            $(".tdStep4_1").html("检测出" + obj.size + "个木马<br>");
+            $(".tdStep4_1").append("检测出" + obj.size + "个木马<br>");
             var text;
             for(var i = 0; i < obj.size; i++){
-                var rstData = obj.susTrojanNets[i];
-                var str;
-                for(var j = 0; j < obj.susTrojanNets[i].length; j++){
-                    str = str + '&emsp;&emsp;' + obj.susTrojanNets[i][j] + '<br>';
+                var trojanCell = obj.trojanCells[i];
+                var str = '';
+                for(var key in trojanCell){
+                    str = str + '&emsp;&emsp;' + trojanCell[key]+ '<br>';
                 }
                 text = '<p>' + "第"+ (i+1) + "个</p>" +
                     '<div >'+ str +'</div>'

@@ -104,7 +104,7 @@ public class VaryNormalMethod {
         input.append("." + vertexNodeList[netIndex].verType + "(" + vertexNodeList[netIndex].vertex + ")");
 
         //添加该实例的索引reference
-        String cell = vertexNodeList[netIndex].gateType + " (" + input.toString() + ");";
+        String cell = vertexNodeList[netIndex].gateType + " "+ vertexNodeList[netIndex].gateName +" (" + input.toString() + ");";
         return cell;
     }
 
@@ -152,7 +152,7 @@ public class VaryNormalMethod {
      * @param vertexNodeList
      * @return
      */
-    public ArrayList<String> reConstructionInfected(ArrayList<String> injects, VertexNode[] vertexNodeList) {
+    public HashMap<String, String> reConstructionInfected(ArrayList<String> injects, VertexNode[] vertexNodeList) {
 
         ArrayList<Integer> injectIndexs = new ArrayList<>();
         //将injects转换为ArrayList<Integer>的集合
@@ -160,10 +160,10 @@ public class VaryNormalMethod {
             injectIndexs.add(findIndex(str));
         }
 
-        ArrayList<String> cells = BFS(injectIndexs, vertexNodeList);
+        HashMap<String, String> cells = BFS(injectIndexs, vertexNodeList);
         System.out.println("  感染模块：");
-        for (String string : cells) {
-            System.out.println(string);
+        for (String string : cells.keySet()) {
+            System.out.println(cells.get(string));
         }
 
         return cells;
@@ -204,9 +204,9 @@ public class VaryNormalMethod {
     /**
      * 进行广度优先遍历BFS
      */
-    private ArrayList<String> BFS(ArrayList<Integer> injects, VertexNode[] vertexNodeList) {
+    private HashMap<String, String> BFS(ArrayList<Integer> injects, VertexNode[] vertexNodeList) {
 
-        ArrayList<String> list = new ArrayList<>();
+        HashMap<String, String> map = new HashMap<>();
 
         Queue<Integer> queue = new LinkedList<Integer>();//队列，先进先出
         int listlen = injects.size();//列表的大小
@@ -239,7 +239,7 @@ public class VaryNormalMethod {
                     HashMap<Integer, String> inputsMap = inputList(row, vertexNodeList);
                     //1.2还原row的逻辑块
                     String cell = refoundCell(row, inputsMap, vertexNodeList);
-                    list.add(cell);
+                    map.put(vertexNodeList[row].vertex, cell);
 
                     //2、找到row的所有未被访问过的输出节点
                     if(vertexNodeList[row].firstOut != null) {
@@ -271,7 +271,7 @@ public class VaryNormalMethod {
                 }
             }
         }
-        return list;
+        return map;
     }
 
 

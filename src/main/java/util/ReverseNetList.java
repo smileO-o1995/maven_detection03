@@ -4,6 +4,7 @@ import domain.NetInfo;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -12,40 +13,65 @@ import java.util.regex.Pattern;
  * @date 2020/1/3 0003-15:36
  */
 public class ReverseNetList {
+
     /**
-     * 将ArrayList<String> starts中的所有节点与ArrayList<NetInfo> netInfos一一对应，得到ArrayList<NetInfo> startsInfos
+     *
+     * @param rstData
+     * @param netInfos
      */
-    public ArrayList<NetInfo> correspondInfos(ArrayList<String> starts, ArrayList<NetInfo> netInfos){
-        ArrayList<NetInfo> startInfos = new ArrayList<>();
-        for(String str : starts){
-            for(NetInfo netInfo: netInfos) {
-                String netName = netInfo.getNetName();
-                if (str.equals(netName)) {
-                    startInfos.add(netInfo);
-                    break;
+    public void recover(Map<String, Object> rstData, ArrayList<NetInfo> netInfos){
+        /*
+        1、根据starts中的节点，进行
+         */
+    }
+
+    /**
+     * 将ArrayList<ArrayList<String>> starts中的所有节点与ArrayList<NetInfo> netInfos一一对应
+     * @param starts : ArrayList<ArrayList<String>>多个木马模块的木马激励起始节点
+     * @param netInfos ：ArrayList<NetInfo>所有节点信息NetInfo的集合
+     * @return startInfos ：多个木马模块的木马激励起始节点的NetInfo信息集合
+     */
+    public ArrayList<ArrayList<NetInfo>> correspondInfos(ArrayList<ArrayList<String>> starts, ArrayList<NetInfo> netInfos){
+        ArrayList<ArrayList<NetInfo>> startInfos = new ArrayList<>();
+
+        for(ArrayList<String> startList : starts){
+            ArrayList<NetInfo> netInfos1 = new ArrayList<>();
+            for(String str : startList){
+                for(NetInfo netInfo: netInfos) {
+                    String netName = netInfo.getNetName();
+                    if (str.equals(netName)) {
+                        netInfos1.add(netInfo);
+                        break;
+                    }
                 }
             }
+            startInfos.add(netInfos1);
         }
         return startInfos;
     }
 
     /**
      * 节点作为输出节点可能有以下几种情况：Q \ QN \ SO \ C1 \ S \ CO
-     * @param starts
-     * @return
+     * @param starts ：多个木马模块的木马触发电路起始信号
+     * @return ： ArrayList<ArrayList<String[]>> 这些信号对应的可能作为输出的信号
      */
-    public ArrayList<String[]> findOutType(ArrayList<String> starts){
-        ArrayList<String[]> startOutTypes = new ArrayList<>();
-        for(String str : starts){
-            String[] sets = new String[6];
-            sets[0] = ".Q(" + str + ")";
-            sets[1] = ".QN(" + str + ")";
-            sets[2] = ".SO(" + str + ")";
-            sets[3] = ".C1(" + str + ")";
-            sets[4] = ".S(" + str + ")";
-            sets[5] = ".CO(" + str + ")";
-            startOutTypes.add(sets);
+    public ArrayList<ArrayList<String[]>> findOutType(ArrayList<ArrayList<String>> starts){
+        ArrayList<ArrayList<String[]>> startOutTypes = new ArrayList<>();
+        for(ArrayList<String> start : starts){
+            ArrayList<String[]> startOutType = new ArrayList<>();
+            for(String str : start){
+                String[] sets = new String[6];
+                sets[0] = ".Q(" + str + ")";
+                sets[1] = ".QN(" + str + ")";
+                sets[2] = ".SO(" + str + ")";
+                sets[3] = ".C1(" + str + ")";
+                sets[4] = ".S(" + str + ")";
+                sets[5] = ".CO(" + str + ")";
+                startOutType.add(sets);
+            }
+            startOutTypes.add(new ArrayList<>(startOutType));
         }
+
         return startOutTypes;
     }
 
@@ -56,18 +82,20 @@ public class ReverseNetList {
      * @param fileName：网表的名称
      * @param savePath：网表的存储路径
      * @param startInfos：木马触发电路的起始节点
-     * @param startOutType：这些起始节点可能对应的输出模式
+     * @param startOutTypes：这些起始节点可能对应的输出模式
+     * @return :写入的文件名称
      */
-    public void reverseFile(String fileName, String savePath,
-                            ArrayList<NetInfo> startInfos, ArrayList<String[]> startOutType) throws Exception{
+    public String reverseFile(String fileName, String savePath,
+                            ArrayList<ArrayList<NetInfo>> startInfos,
+                            ArrayList<ArrayList<String[]>> startOutTypes) throws Exception{
         //1、读文件流
-        BufferedReader bReader = new BufferedReader(new InputStreamReader(new FileInputStream(savePath + fileName)));
+        BufferedReader bReader = new BufferedReader(new InputStreamReader(new FileInputStream(savePath + "\\" + fileName)));
         //2、写文件
         // 文件写入流
-        String reFile = fileName.substring(0, fileName.lastIndexOf(".")) + "_reverse.txt";
+        String reFile = fileName.substring(0, fileName.lastIndexOf(".")) + "_reverse.v";
         File reCont = new File(savePath, "\\" + reFile);
         //***测试运行位置的代码
-        System.out.println(savePath + "\\" + reFile);
+//        System.out.println(savePath + "\\" + reFile);
         try {
             if (!reCont.exists()) {
                 reCont.createNewFile();
@@ -110,6 +138,25 @@ public class ReverseNetList {
             //（5）进行对比和替换
             endLabel = dest.indexOf(";");
             if (endLabel != -1) {
+
+                /*
+                在input、output、wire中删除掉对应的节点startInfos：startInfo：NetInfo：getName()
+                 */
+                if(content.startsWith("wire")){
+                    for(ArrayList<NetInfo> startInfo : startInfos) {
+                        for (NetInfo netInfo : startInfo) {
+                            String netName = netInfo.getNetName();
+                            if (content.contains(netName + ",") || content.contains(netName + ";")) {
+                                content = content.replace(netName, "");
+                            }
+                        }
+                    }
+                    pWriter.println(content);
+                    pWriter.flush();
+                    content = "";
+                    continue;
+                }
+
                 /*
                  * 当出现content结束标志的时候，需要做如下事情：
                  * 1）判断content的输出是否是startOutType中的元素，如果有，则忽略该content
@@ -119,40 +166,49 @@ public class ReverseNetList {
                  * }
                  */
                 boolean isCorrespond = false;
-                for(int i = 0; i < startOutType.size(); i++){
-                    String[] set = startOutType.get(i);
-                    for(int j = 0; j < set.length; j++){
-                        isCorrespond = isCorrespond || content.contains(set[j]);
+                for(int i = 0; i < startOutTypes.size(); i++){
+                    ArrayList<String[]> startOutType = startOutTypes.get(i);
+                    for(int j = 0; j < startOutType.size(); j++){
+                        String[] set = startOutType.get(j);
+                        for(int k = 0; k < set.length; k++){
+                            isCorrespond = isCorrespond || content.contains(set[k]);
+                        }
                     }
                 }
 
                 if(!isCorrespond){
-                    for(NetInfo netInfo : startInfos){
-                        String netName = "(" + netInfo.getNetName() + ")";
-                        if(content.contains(netName)){
-                            int CC0 = netInfo.getCC0();
-                            int CC1 = netInfo.getCC1();
-                            String reStr = "";
-                            if(CC1 > 0 && CC0 > 0){
-                                reStr = CC1 < CC0 ? "1'b1" : "1'b0";
-                            }else if(CC0 < 0){
-                                reStr = "1'b1";
-                            }else{
-                                reStr = "1'b0";
+                    for(ArrayList<NetInfo> startInfo : startInfos){
+                        for(NetInfo netInfo : startInfo){
+                            String netName = "(" + netInfo.getNetName() + ")";
+                            if(content.contains(netName)){
+                                System.out.println(netName  + "(" + netInfo.getCC0() + "," +netInfo.getCC1() +")"+ ": " + content);
+                                int CC0 = netInfo.getCC0();
+                                int CC1 = netInfo.getCC1();
+                                String reStr = "";
+                                if(CC1 > 0 && CC0 > 0){
+                                    reStr = CC1 < CC0 ? "1'b1" : " 1'b0";
+                                }else if(CC0 < 0){
+                                    reStr = "1'b1";
+                                }else{
+                                    reStr = "1'b0";
+                                }
+                                reStr = "(" + reStr + ")";
+                                content = content.replace(netName, reStr);
+                                System.out.println("  " + netName + ": " + content);
                             }
-                            reStr = "(" + reStr + ")";
-                            content.replace(netName, reStr);
                         }
                     }
                     pWriter.println(content);
                     pWriter.flush();
                 }
+
                 content = "";
             }
         }
 
         bReader.close();
         pWriter.close();
+        return reFile;
     }
 
 }

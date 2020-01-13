@@ -6,4 +6,5 @@ public class VertexNode {
 	public String verType; //pin
 	public EdgeNode firstIn; //指向的是一个边表
 	public EdgeNode firstOut; //指向的是一个边表
+	public String gateName;
 }
