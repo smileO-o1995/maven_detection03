@@ -25,6 +25,10 @@ public class NetInfo {
         this.gateName = gateName;
     }
 
+    public String getGateName() {
+        return gateName;
+    }
+
     public int getVerId() {
         return verId;
     }

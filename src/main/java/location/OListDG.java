@@ -42,7 +42,6 @@ public class OListDG {
         //初始化边,利用头插法建立十字链表
         for(int i = 0; i<elen ; i++) {
             EdgeNode edgeNode_1 = new EdgeNode(); //实例化边表edgeNode_1
-//			EdgeNode edgeNode_2 = new EdgeNode(); //实例化边表edgeNode_2
 
             int vi = getPosition(edges.get(i).get(0)); //边对中，第一个节点所对应的编号（出发节点编号）
             int vj = getPosition(edges.get(i).get(1)); //边对中，第二个节点所对应的编号（终止节点编号）

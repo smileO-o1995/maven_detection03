@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import domain.NetInfo;
 import service.ReConstruction;
 import util.NetListRead;
-import util.ReverseNetList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -53,34 +52,10 @@ public class LocationServlet extends HttpServlet {
         2、将netSet提交给ReConstruction的入口函数中
          */
         ReConstruction reConstruction = new ReConstruction();
-        Map<String, Object> rstData = reConstruction.constructionEnter(netSet2, netList);
+        Map<String, Object> rstData = reConstruction.constructionEnter(netSet2, netList, netInfos);
 
         /*
-        3、设置修改原网表，消除木马的触发条件
-        参数：
-        （1）starts: ArrayList<ArrayList<String>>木马触发电路起始节点
-        （1）将starts中的节点与netInfos中的木马节点一一对应，得到ArrayList<NetInfo> startInfos
-        （2）将starts中的节点可能出现的几种输出情况标记出来
-        （3）读取源.v文件，对比每一个逻辑单元，然后替换掉，写入新的文件中
-         */
-//        ArrayList<ArrayList<String>> starts = (ArrayList<ArrayList<String>>)rstData.get("starts");
-        ReverseNetList reverseNetList = new ReverseNetList();
-        reverseNetList.recover(rstData,netInfos);
-
-
-//        ArrayList<ArrayList<NetInfo>> startInfos = reverseNetList.correspondInfos(starts, netInfos);
-
-//        ArrayList<ArrayList<String[]>> startOutTypes = reverseNetList.findOutType(starts);
-
-//        try{
-//            String reverseFileName = reverseNetList.reverseFile(fileName, savePath, startInfos, startOutTypes);
-//            session.setAttribute("reverseFileName", reverseFileName);
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
-
-        /*
-        4、设置返回的数据
+        3、设置返回的数据
          */
         ObjectMapper mapper = new ObjectMapper();
         String json = mapper.writeValueAsString(rstData);
